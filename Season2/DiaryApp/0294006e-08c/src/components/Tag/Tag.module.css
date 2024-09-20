@@ -1,0 +1,46 @@
+.tag {
+  display: flex;
+  padding: 4px 12px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background-color: var(--tag-background);
+  box-shadow: var(--button-shadow);
+  max-width: 380px;
+}
+
+.tag span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--tag-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tag:hover {
+  background-color: #e0e0e0;
+}
+
+.tag[data-active='true'] {
+  background-color: #cacacb;
+}
+
+.button {
+  background-color: transparent;
+  line-height: 20px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.tag[data-active='true'] span,
+.tag:hover span {
+  color: #1e2022;
+}
+
+.tag:hover .button svg path,
+.button:active svg path {
+  fill: #1e2022;
+}

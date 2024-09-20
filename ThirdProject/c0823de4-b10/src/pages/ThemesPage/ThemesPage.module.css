@@ -1,0 +1,29 @@
+.wrapper {
+  width: 1132px;
+  height: 656px;
+  background-color: var(--light-theme-bg-primary-default);
+  padding: 32px 40px 24px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.logo {
+  width: 91px;
+  height: 44px;
+  position: absolute;
+  left: 40px;
+  top: 27px;
+}
+
+.button {
+  width: 304px;
+  margin: 0 auto;
+}

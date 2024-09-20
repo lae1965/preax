@@ -1,0 +1,6 @@
+.content {
+  display: flex;
+  align-items: start;
+  gap: 32px;
+  position: relative;
+}

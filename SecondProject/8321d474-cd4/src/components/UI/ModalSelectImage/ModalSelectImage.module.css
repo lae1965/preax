@@ -1,0 +1,38 @@
+.wrapper {
+  display: none;
+}
+
+@media (max-width: 1439px) {
+  .wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 80px;
+    background: rgba(50, 47, 40, 1);
+    backdrop-filter: blur(5px);
+    transition: opacity 0.5s ease;
+    z-index: 100;
+    opacity: 0;
+    overflow: auto;
+  }
+
+  .wrapperActive {
+    opacity: 1;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 764px) {
+  .wrapper {
+    padding: 40px 20px;
+  }
+}

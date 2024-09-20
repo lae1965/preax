@@ -1,0 +1,23 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 506px;
+  gap: 16px;
+  padding: 32px;
+  align-items: center;
+}
+
+@media (max-width: 886px) {
+  .header {
+    grid-template-columns: 53px 1fr;
+    gap: 135px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    grid-template-columns: 1fr minmax(260px, 390px);
+    padding: 16px;
+    gap: 16px;
+  }
+}

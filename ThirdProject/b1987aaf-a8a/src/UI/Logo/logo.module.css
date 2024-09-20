@@ -1,0 +1,19 @@
+.logo {
+	display: inline-block;
+	color: var(--logo-color);
+	font-size: 48px;
+	line-height: 1.33;
+	font-weight: 900;
+}
+
+.logo svg {
+	width: 81px;
+	height: 40px;
+}
+
+@media (min-width: 744px) {
+	.logo svg {
+		width: 121px;
+		height: 64px;
+	}
+}

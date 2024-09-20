@@ -1,0 +1,21 @@
+.main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 64px 16px;
+  padding: 32px;
+}
+
+@media (max-width: 1023px) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    gap: 32px;
+    padding: 16px;
+  }
+}

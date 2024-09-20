@@ -1,0 +1,20 @@
+.imageItem {
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-color: lightgray;
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 1439px) {
+  .imageItem {
+    height: 271px;
+  }
+}
+
+@media (max-width: 764px) {
+  .imageItem {
+    height: 190px;
+  }
+}

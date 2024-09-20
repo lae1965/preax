@@ -1,0 +1,36 @@
+.theme {
+  width: 239px;
+  height: 204px;
+  border-radius: 10px;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  filter: grayscale(1) brightness(0.8);
+  transition:
+    filter 0.3s,
+    border 0.3s ease-in-out;
+}
+
+.theme[data-selected='true'] {
+  border: 4px solid #ffaa60;
+  filter: grayscale(0) brightness(1);
+}
+
+.name {
+  color: var(--light-theme-text-primary-disable);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  transition: color 0.3s ease-in-out;
+}
+
+.name[data-selected='true'] {
+  color: var(--light-theme-bg-primary-default);
+}

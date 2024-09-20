@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.image {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background: var(--logo-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: var(--text);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 36px;
+  font-weight: 700;
+}

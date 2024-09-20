@@ -1,0 +1,56 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 227px;
+  height: 60px;
+  margin-right: 118px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logoSvg {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  margin-right: 18px;
+}
+
+.text {
+  font-family: var(--roboto);
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 2px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-shadow: var(--boxShadow);
+}
+
+@media (max-width: 764px) {
+  .logoSvg {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+
+  .logoSvg svg {
+    width: 23px;
+    height: 23px;
+  }
+  .text {
+    font-size: 24px;
+  }
+  .logo {
+    height: 40px;
+    margin-right: 0;
+    justify-content: flex-start;
+  }
+}

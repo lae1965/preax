@@ -1,0 +1,161 @@
+.wrapper {
+  display: grid;
+  width: 100%;
+  gap: 32px;
+  padding: 32px 0;
+  margin: 0;
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.skeleton-list {
+  padding: 0;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skeleton-item {
+  display: grid;
+  background-color: var(--neutral-100);
+  padding: 32px;
+  gap: 16px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.skeleton-title {
+  width: 256px;
+  height: 32px;
+  background-color: var(--neutral-300);
+  border-radius: var(--border-radius);
+}
+
+.skeleton-header,
+.skeleton-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-header {
+  row-gap: 4px;
+}
+
+.skeleton-body {
+  row-gap: 8px;
+}
+
+.skeleton-header::before,
+.skeleton-header::after,
+.skeleton-body::before,
+.skeleton-body::after,
+.skeleton-footer::before,
+.skeleton-footer::after {
+  content: '';
+  border-radius: var(--border-radius);
+  background-color: var(--neutral-300);
+}
+
+.skeleton-header::before {
+  width: 225px;
+  height: 24px;
+}
+
+.skeleton-header::after {
+  width: 131px;
+  height: 24px;
+}
+
+.skeleton-body::before {
+  width: 96px;
+  height: 16px;
+}
+
+.skeleton-body::after {
+  width: 55px;
+  height: 16px;
+}
+
+.skeleton-footer {
+  display: flex;
+  column-gap: 8px;
+}
+
+.skeleton-footer::before {
+  width: 16px;
+  height: 16px;
+}
+
+.skeleton-footer::after {
+  width: 148px;
+  height: 16px;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 355px);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--neutral-600);
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  .skeleton-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .skeleton {
+    row-gap: 16px;
+  }
+
+  .skeleton-list {
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .skeleton-item {
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .skeleton-title {
+    width: 172px;
+    height: 28px;
+  }
+
+  .skeleton-body {
+    row-gap: 8px;
+  }
+
+  .skeleton-header::before {
+    height: 20px;
+  }
+
+  .skeleton-header::after {
+    height: 20px;
+  }
+
+  .skeleton-footer {
+    column-gap: 8px;
+  }
+}

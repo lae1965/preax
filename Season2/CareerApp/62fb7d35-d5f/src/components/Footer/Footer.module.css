@@ -1,0 +1,15 @@
+.container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.copyrights {
+  font-size: 14px;
+  line-height: 1.429;
+  font-weight: 500;
+  color: var(--neutral-600);
+}
+
+.copyrights a {
+  text-decoration: underline;
+}

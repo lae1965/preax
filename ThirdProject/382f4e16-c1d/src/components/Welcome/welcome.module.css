@@ -1,0 +1,13 @@
+.welcome {
+  width: 562px;
+  height: 670px;
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: -14px;
+  right: 0;
+  height: 193px;
+  width: 179px;
+}

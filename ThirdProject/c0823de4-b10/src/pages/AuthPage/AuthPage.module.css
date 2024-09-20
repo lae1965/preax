@@ -1,0 +1,22 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 552px;
+}
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 177px;
+  height: 177px;
+  background: url('/images/png/girl.png') center / cover no-repeat;
+}
+
+.authPage__logo{
+  flex-basis: content;
+  align-self: flex-start;
+}

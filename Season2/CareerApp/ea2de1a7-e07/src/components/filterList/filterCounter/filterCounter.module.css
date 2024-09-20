@@ -1,0 +1,24 @@
+.wrapper {
+  background-color: #cfddf2;
+  padding: 4px 8px;
+  width: fit-content;
+  min-width: 34px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper[data-hidden='true'] {
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .wrapper[data-display-none='true'] {
+    display: none;
+  }
+}

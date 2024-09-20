@@ -1,0 +1,9 @@
+:root {
+  --logo-2: linear-gradient(137deg, #fff76a 0%, #ffce89 100%);
+  --text: #1e2022;
+  --hint: #acacac;
+  --bg-card-color: rgba(255, 255, 255, 0.90);
+  --bg-card-circle-color: rgba(255, 255, 255, 0.80);
+  --text-date-color: #999;
+  --hint-2: #999;
+}

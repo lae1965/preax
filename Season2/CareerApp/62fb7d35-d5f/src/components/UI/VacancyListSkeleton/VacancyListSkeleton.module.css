@@ -1,0 +1,94 @@
+.skeleton {
+  position: relative;
+  display: block;
+  height: 16px;
+  border-radius: 16px;
+  background: var(--neutral-300);
+  animation: pulse 2s ease-in-out 0.5s infinite normal none running;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.vacanciesSection {
+  margin-top: 64px;
+}
+
+.title {
+  max-width: 256px;
+  height: 32px;
+  margin-bottom: 32px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.card {
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--border-radius);
+  background: var(--neutral-100);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow .2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.container {
+  position: relative;
+}
+
+.name {
+  max-width: 225px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.salary {
+  max-width: 131px;
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+.company {
+  max-width: 96px;
+  margin-bottom: 8px;
+}
+
+.city {
+  max-width: 55px;
+  margin-bottom: 16px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experience .icon {
+  flex-shrink: 0;
+  width: 16px;
+}
+
+.experience .value {
+  flex: 1;
+  max-width: 148px;
+}

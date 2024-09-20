@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+}
+
+.inputGroup {
+  display: flex;
+  width: auto;
+}
+
+.headerButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 19px 0 20px;
+  letter-spacing: 0.4px;
+}

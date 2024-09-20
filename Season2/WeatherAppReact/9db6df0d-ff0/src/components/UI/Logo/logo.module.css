@@ -1,0 +1,29 @@
+.logo {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.logoIconTablet {
+  display: none;
+}
+
+@media all and (max-width: 1023px) {
+  .logo {
+    margin-top: 2px;
+  }
+
+  .logoIcon {
+    display: none;
+  }
+
+  .logoIconTablet {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .logoIconTablet {
+    width: 32px;
+    height: 32px;
+  }
+}

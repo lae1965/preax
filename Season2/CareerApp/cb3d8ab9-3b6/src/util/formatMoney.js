@@ -1,0 +1,1 @@
+export const formatMoney = (money) => money?.toLocaleString('ru-RU', { minimumFractionDigits: 0, maximumFractionDigits: 0 });

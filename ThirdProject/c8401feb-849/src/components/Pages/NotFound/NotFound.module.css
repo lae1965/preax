@@ -1,0 +1,10 @@
+.text {
+	color: var(--light-theme-text-secondary-default, #909090);
+	font-size: 10px;
+	font-weight: 400;
+	margin-top: -24px;
+}
+
+.text span {
+	font-weight: 700;
+}

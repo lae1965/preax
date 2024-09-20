@@ -1,0 +1,8 @@
+.container {
+	display: flex;
+	min-width: 1280px;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: lightgray 50% / cover no-repeat url('/images/bgImage.jpg');
+}

@@ -1,0 +1,19 @@
+.emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.emoji:hover {
+  border: 1px solid #ebd14a;
+}
+
+.active {
+  border: 1px solid #d2aa1b;
+}

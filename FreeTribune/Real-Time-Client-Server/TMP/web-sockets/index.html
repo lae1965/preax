@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Socket</title>
+  <script src="https://cdn.socket.io/4.2.0/socket.io.min.js"
+    integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+  body {
+    padding: 100px;
+  }
+
+  input,
+  button {
+    color: darkcyan;
+    border: 2px solid darkcyan;
+    background-color: #fff;
+    outline: none;
+  }
+
+  input {
+    padding: 15px;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  button {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+</style>
+</head>
+
+<body>
+  <form id="form">
+    <input id="input" type="text" name="message" aria-label="message">
+    <button id="button" type="submit">Отправить</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('form');
+
+    const socket = io('localhost:5555');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      socket.emit('client-msg', { message: form.elements.message.value });
+      form.elements.message.value = '';
+    })
+
+    socket.on('connect', () => {
+      console.log('Connected!');
+    });
+
+    socket.on('server-msg', data => {
+      console.log(data);
+
+      const p = document.createElement('p');
+      p.innerText = data.message;
+      form.after(p);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+.inputGroup {
+	width: 424px;
+}
+
+.label {
+	display: block;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	font-style: normal;
+	color: var(--light-theme-text-primary-default);
+	position: relative;
+}
+
+.input {
+	width: 100%;
+	height: 56px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 16px 48px 16px 16px;
+	font-size: 16px;
+	border-radius: 10px;
+	border: 2px solid var(--both-theme-input-default);
+}
+
+.input:focus {
+	outline: none;
+}
+
+input[error] {
+	border-color: var(--light-theme-text-primary-error);
+}
+
+.controlButton {
+	position: absolute;
+	top: 49px;
+	right: 16px;
+	display: flex;
+	gap: 8px;
+}
+
+.controlButton span {
+	cursor: pointer;
+}
+
+.input[data-type='password'] {
+	padding-right: 80px;
+}
+
+.input::-ms-reveal,
+.input::-ms-clear {
+	display: none;
+}
+
+.inputDescription {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	font-style: normal;
+	color: var(--light-theme-text-secondary-default);
+}
+
+.error {
+	margin-bottom: 8px;
+}

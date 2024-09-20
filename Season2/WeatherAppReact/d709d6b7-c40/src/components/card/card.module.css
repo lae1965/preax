@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--neutral-filled-900);
+}
+
+.value {
+  font-size: 32px;
+  line-height: 1;
+  color: var(--neutral-filled-900);
+}
+
+.bottom {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.333;
+  text-align: center;
+  color: var(--neutral-filled-800);
+  word-break: break-all;
+}
+
+.info.interval {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .card {
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 1.333;
+  }
+
+  .value {
+    font-size: 22px;
+  }
+
+  .progress {
+    height: 6px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    mask: radial-gradient(
+        circle at var(--progress-value),
+        transparent 5px,
+        #ffffff 0px
+      ),
+      radial-gradient(
+        circle at var(--progress-value),
+        var(--neutral-filled-100) 3px,
+        transparent 0px
+      );
+    -webkit-mask: radial-gradient(
+        circle at var(--progress-value),
+        transparent 5px,
+        #ffffff 0px
+      ),
+      radial-gradient(
+        circle at var(--progress-value),
+        var(--neutral-filled-100) 3px,
+        transparent 0px
+      );
+  }
+
+  .progress div::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .info {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .img {
+    width: 24px;
+    height: 24px;
+  }
+}

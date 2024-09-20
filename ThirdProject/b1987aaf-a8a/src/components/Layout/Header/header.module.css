@@ -1,0 +1,11 @@
+.header {
+	height: 40px;
+	margin-bottom: 8px;
+}
+
+@media (min-width: 744px) {
+	.header {
+		height: 64px;
+		margin-bottom: 32px;
+	}
+}

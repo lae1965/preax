@@ -1,0 +1,43 @@
+.button {
+  height: 60px;
+  width: 225px;
+  padding: 18px 20px;
+  border: none;
+  background: linear-gradient(137deg, #fff76a 0%, #ffce89 100%);
+  border-radius: 10px;
+  box-shadow: var(--boxShadow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--IBM);
+  cursor: pointer;
+}
+
+button span {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+@media (max-width: 764px) {
+  .text {
+    display: none;
+  }
+  .button {
+    height: 40px;
+    width: auto;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .shortButton {
+    width: 40px;
+  }
+
+  .button svg {
+    width: 20px;
+    height: 20px;
+  }
+}

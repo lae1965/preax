@@ -1,0 +1,39 @@
+.wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.selector {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 22px 17px 18px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.wrapper:hover path {
+  fill: #747576;
+}
+
+.wrapper:hover .selector {
+  border-color: #e0e0e0;
+}
+
+.wrapper[data-opened='true'] path {
+  fill: #494b4c;
+}
+
+.wrapper[data-opened='true'] .selector {
+  border-color: #cacacb;
+}
+
+.arrowWrapper {
+  transform: rotate(0);
+  transition: transform 0.3s;
+}
+
+.wrapper[data-opened='true'] .arrowWrapper {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,48 @@
+.loadingBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.loadingCircle {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: var(--light-theme-text-secondary-elements);
+  border-radius: 100%;
+  transition: top linear 1s;
+  top: 0px;
+}
+.loadingCircle:nth-child(1) {
+  animation: dotsJumping .9s linear  infinite;
+}
+.loadingCircle:nth-child(2) {
+  animation: dotsJumping .9s linear .3s infinite;
+}
+.loadingCircle:nth-child(3) {
+  animation: dotsJumping .9s linear .6s infinite;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes dotsJumping {
+  0% {
+
+      top: 0px;
+  
+   
+  }
+  50% {
+
+    top: -3px;
+
+ 
+  }
+  100% {
+
+      top: 0px;
+    
+    
+  }
+}

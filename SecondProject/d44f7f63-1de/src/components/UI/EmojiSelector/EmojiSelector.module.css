@@ -1,0 +1,64 @@
+.selector {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--bg-white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.emoji {
+  width: 20px;
+  height: 20px;
+  margin-right: 22px;
+}
+
+.arrow {
+  padding-top: 5px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100px;
+  border-radius: 10px;
+  background: var(--bg-white);
+  box-shadow: var(--box-shadow);
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+.selector.open .dropdown {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown div {
+  display: flex;
+  justify-content: center;
+  padding: 5px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown div:hover {
+  background: #f0f0f0;
+}
+
+.focus {
+  box-shadow: 0px 0px 15px #fff76a, 0px 0px 15px #ffce89;
+}

@@ -1,0 +1,39 @@
+.addNote {
+  margin-inline: auto;
+  padding-block: 20px;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: auto 380px;
+  grid-template-rows: 60px 240px auto;
+  gap: 40px;
+}
+
+.dateEmoji {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.button {
+  padding: 18px;
+  gap: 10px;
+}
+
+.greyButton {
+  background-color: #e9eaea;
+}
+
+.greyButton:hover {
+  background-color: #e0e0e0;
+}
+
+.greyButton:active {
+  background-color: #cacacb;
+}

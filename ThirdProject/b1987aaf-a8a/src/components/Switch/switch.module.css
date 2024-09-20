@@ -1,0 +1,37 @@
+.toggleThemes {
+	width: 96px;
+	height: 48px;
+	border-radius: 57px;
+	border: 2px solid rgba(144, 144, 144, 0.5);
+	background-color: var(--text-secondary-elements);
+	transition: background-color 0.5s ease-in-out;
+	display: flex;
+	padding: 8px 12px;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+.ellipse {
+	position: absolute;
+	z-index: -1;
+	left: 8px;
+	width: 32px;
+	height: 32px;
+	background-color: var(--bg-primary-button);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: left 0.5s ease-in-out;
+}
+
+.ellipse[data-theme='dark'] {
+	left: 52px;
+}
+
+.moon[data-theme='dark'] svg path {
+	fill: #fcfcfc;
+	stroke: #fcfcfc;
+}

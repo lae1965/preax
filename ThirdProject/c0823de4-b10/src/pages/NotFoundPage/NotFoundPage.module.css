@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 704px;
+}
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 177px;
+  height: 177px;
+  background: url('/images/png/lost.png') center / cover no-repeat;
+}
+
+.notFoundPage__logo {
+  flex-basis: content;
+  align-self: flex-start;
+}
+
+.content {
+  padding: 64px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--main-radius);
+  background: var(--light-theme-bg-primary-default);
+}
+
+.content__title {
+  color: var(--light-theme-text-primary-default);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.content__button {
+  width: 304px;
+}

@@ -1,0 +1,28 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  min-height: 100%;
+  padding: var(--offset-lg);
+  background-image: url('../../assets/main_bg-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 32px;
+}
+
+@media all and (max-width: 1023px) {
+
+  .layout {
+    padding: 24px;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .layout {
+    padding: 16px;
+  }
+}

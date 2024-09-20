@@ -1,0 +1,78 @@
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  padding: 20px 24px;
+  border-radius: 10px;
+  background: var(--primary-button);
+  color: var(--secondary-elements);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.authorizationWidth {
+  width: 70%;
+}
+
+.notFountWidth {
+  width: 304px;
+}
+
+.themesWidth {
+  width: 28.9%;
+}
+
+.reset {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  margin: 0;
+}
+
+.btn_descr {
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--primary-text);
+}
+
+.bold {
+  font-weight: 700;
+  color: inherit;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 744px) {
+  .button:not([attr-change='disable']) {
+    width: 264px;
+    height: 56px;
+    padding: 16px 32px;
+    margin-bottom: 0;
+  }
+
+  .btn_descr {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .button:not([attr-change='disable']) {
+    width: 295px;
+    height: 44px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

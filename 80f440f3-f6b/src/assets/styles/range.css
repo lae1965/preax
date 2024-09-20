@@ -1,0 +1,27 @@
+.range {
+  width: 100%;
+}
+
+.range__digits {
+  color: var(--color-main);
+  font-size: 12px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.range__back-layer {
+  height: 11px;
+  border-radius: 10px;
+  background-color: var(--background-range);
+}
+
+.range__front-layer {
+  height: 11px;
+  border-radius: 10px;
+  background-color: #ec6e4d;
+}
+
+.range__percents {
+  justify-content: flex-end;
+}

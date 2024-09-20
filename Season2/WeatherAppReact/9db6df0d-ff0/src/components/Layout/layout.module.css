@@ -1,0 +1,31 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--offset-lg);
+  background-image: url('../../assets/main_bg-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 31px;
+  height: 100vh;
+  min-height: 100%;
+  overflow-y: auto;
+
+}
+
+.layout.overflow {
+  overflow: hidden;
+}
+
+@media all and (max-width: 1023px) {
+  .layout {
+    padding: 24px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .layout {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Noto Emoji';
+  src: local('  Noto Emoji'),
+    url(../../assets/fonts/NotoEmoji-Medium.ttf) format('truetype');
+}
+
+.content {
+  font-family: 'Noto Emoji', serif;
+  color: transparent;
+  width: 1em;
+  height: 1em;
+}
+.content::selection {
+  background-color: rgba(0, 116, 255, 0.8);
+  color: rgba(0, 0, 0, 0);
+}
+
+.bg {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

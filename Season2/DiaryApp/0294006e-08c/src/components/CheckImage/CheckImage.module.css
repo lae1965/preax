@@ -1,0 +1,11 @@
+.checkImage {
+  height: 100%;
+}
+
+.inputWrapper {
+  padding: 40px;
+}
+
+.inputShadow {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+}

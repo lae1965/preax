@@ -1,0 +1,24 @@
+.link {
+  font-size: 0;
+  display: inline-block;
+}
+
+.logo {
+  width: 192px;
+  height: 48px;
+}
+
+
+@media (max-width: 991.98px) {
+  .logo {
+    width: 54px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 699.98px) {
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+}

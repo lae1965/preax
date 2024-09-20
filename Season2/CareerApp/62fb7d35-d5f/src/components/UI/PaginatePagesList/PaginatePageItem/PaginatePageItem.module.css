@@ -1,0 +1,30 @@
+.button {
+  height: 44px;
+  width: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-300);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--neutral-800);
+  border: none;
+  transition: background-color 0.3s color 0.3s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: var(--primary-400);
+  color: var(--neutral-100);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--primary-500);
+  color: var(--neutral-100);
+}
+
+.button:disabled {
+  background-color: transparent;
+}

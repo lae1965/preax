@@ -1,0 +1,62 @@
+.root {
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  height: 193px;
+  width: 179px;
+}
+
+.authorizationWidth {
+  width: 584px;
+}
+
+.notFountWidth {
+  width: 750px;
+}
+
+.lost {
+  width: 159px;
+  height: 182px;
+}
+
+@media (max-width: 1280px) {
+  .authorizationWidth {
+    width: 552px;
+  }
+}
+
+@media (max-width: 744px) {
+  .authorizationWidth {
+    width: 508px;
+  }
+
+  .notFountWidth {
+    width: 603px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 117px;
+    height: 117px;
+    top: -46px;
+  }
+
+  .authorizationWidth {
+    width: 359px;
+  }
+
+  .notFountWidth {
+    width: 354px;
+  }
+  .lost {
+    width: 85px;
+    height: 99px;
+    top: -35px;
+    right: 15px;
+  }
+}

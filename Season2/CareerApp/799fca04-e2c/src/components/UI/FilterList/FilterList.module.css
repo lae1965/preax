@@ -1,0 +1,19 @@
+.container {
+  padding: 48px 40px 0;
+  text-align: right;
+}
+
+.filterList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  text-align: left;
+  list-style: none;
+}
+
+.resetBtn {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.333;
+  color: var(--primary-500);
+}

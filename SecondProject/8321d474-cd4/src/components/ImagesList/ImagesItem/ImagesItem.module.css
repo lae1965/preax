@@ -1,0 +1,42 @@
+.figure {
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: var(--boxShadow);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  height: 220px;
+  max-height: 460px;
+  transition: opacity 0.5s ease;
+}
+
+.selected {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradient);
+}
+
+@media (max-width: 1439px) {
+  .figure {
+    min-height: 283px;
+    height: 283px;
+    max-height: 606px;
+  }
+}
+
+@media (max-width: 764px) {
+  .figure {
+    min-height: 192px;
+    height: 192px;
+    max-height: 404px;
+  }
+}

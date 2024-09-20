@@ -1,0 +1,19 @@
+.logoSmall {
+  display: none;
+}
+
+@media (max-width: 886px) {
+  .logoBig {
+    display: none;
+  }
+
+  .logoSmall {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .logoSmall svg {
+    width: 35px;
+  }
+}

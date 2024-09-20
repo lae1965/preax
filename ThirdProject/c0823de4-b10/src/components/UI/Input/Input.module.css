@@ -1,0 +1,107 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input {
+  margin-bottom: 8px;
+  padding: 16px;
+  border-radius: var(--main-radius);
+  border: 2px solid;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--light-theme-text-primary-default);
+}
+.input[type='text'] {
+  padding-right: 50px;
+}
+.input[type='password'] {
+  padding-right: 80px;
+}
+.input.success {
+  border-color: var(--both-theme-input-success);
+}
+
+.input.error {
+  border-color: var(--both-theme-variant-incorrect);
+}
+
+.input.regular {
+  border-color: var(--both-theme-input-default);
+}
+
+.input:focus {
+  outline: none;
+}
+
+/* Убираем нативную иконку */
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
+}
+
+.hint {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--light-theme-text-secondary-default);
+}
+
+.helpText {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: var(--light-theme-text-secondary-default);
+}
+.helpText.success {
+  color: var(--both-theme-input-success);
+}
+
+.helpText.error {
+  color: var(--both-theme-variant-incorrect);
+}
+
+.helpText.regular {
+  color: var(--both-theme-input-default);
+}
+
+.title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--light-theme-text-primary-default);
+}
+
+.miniButtonsBlock {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  display: flex;
+  gap: 9px;
+}
+
+.miniButton {
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+.miniButton:hover {
+  opacity: 0.9;
+}
+.miniButton:active {
+  opacity: 0.5;
+}

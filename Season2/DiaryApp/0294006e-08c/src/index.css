@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --button-color: #ffe55e;
+  --button-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  --tag-color: #494b4c;
+  --tag-background: #e9eaea;
+  --footer-color: #747576;
+  --main-background: #1e2022;
+  --background-color: #fdfcf3;
+  --dropdown-border-color: #cacacb;
+  --hint-hover-background: #e0e0e0;
+  --hint-choiced-background: #cacacb;
+  --modal-header-height: 142px;
+  --modal-padding: 40px;
+  color: var(--main-background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+}
+
+body {
+  min-width: 1280px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+input,
+textarea,
+button {
+  background-color: #fff;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  box-shadow: var(--button-shadow);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+input,
+textarea {
+  border: 1px solid #ffffff;
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid #e0e0e0;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #cacacb;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,49 @@
+.wrapper {
+  display: grid;
+  gap: 32px;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.cardsBlock {
+  padding: 0;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    gap: 24px;
+  }
+
+  .cardsBlock {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .cardsBlock {
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+}

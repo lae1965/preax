@@ -1,0 +1,86 @@
+* {
+  outline: none;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.countValue {
+  width: 118px;
+  height: 76px;
+  padding: 16px;
+  border: 4px solid var(--main-text-color);
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  transition: color 0.5s, border-color 0.5s;
+}
+
+.countValue:hover,
+.countValue:focus,
+.changer:focus svg path {
+  color: var(--button-bg-collor);
+  border-color: var(--button-bg-collor);
+}
+
+.changer {
+  cursor: pointer;
+  border: none;
+}
+
+.changer:disabled {
+  cursor: not-allowed;
+}
+
+.changer:hover path,
+.changer:focus path {
+  fill: var(--button-bg-collor);
+  stroke: var(--button-bg-collor);
+}
+
+.changer:hover circle,
+.changer:focus circle {
+  stroke: var(--button-bg-collor);
+}
+
+.changer:disabled path {
+  fill: var(--main-text-disabled-color);
+  stroke: var(--main-text-disabled-color);
+}
+
+.changer:disabled circle {
+  stroke: var(--main-text-disabled-color);
+}
+
+.countValue::-webkit-inner-spin-button,
+.countValue::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 653px) {
+  .counter {
+    gap: 12px;
+  }
+
+  .countValue {
+    width: 88px;
+    height: 52px;
+    padding: 12px;
+    border-width: 2px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .changer svg {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,70 @@
+.card {
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--border-radius);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.333;
+  background: var(--neutral-100);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow .2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.container {
+  position: relative;
+}
+
+.hideBtn {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: var(--neutral-400);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+}
+
+.card:hover .hideBtn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.name {
+  margin-bottom: 4px;
+  padding-right: 48px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.salary {
+  margin-bottom: 16px;
+  padding-right: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.company {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.city {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

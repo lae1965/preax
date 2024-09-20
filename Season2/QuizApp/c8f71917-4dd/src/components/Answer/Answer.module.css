@@ -1,0 +1,13 @@
+.answers {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 653px) {
+  .answers {
+    margin-bottom: 16px;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,15 @@
+.main {
+  height: 654px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.button {
+  padding: 18px 34.5px;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 24px;
+}

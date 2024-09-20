@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #145464 0% 40.5%,
+    #ef6c42 40.5% 54.7%,
+    #fc9b44 54.7% 85.3%,
+    #fccb4b 85.3% 100%
+  );
+}
+
+.formContainer {
+  position: relative;
+  display: grid;
+  max-width: 584px;
+  gap: 32px;
+}
+
+@media (max-width: 840px) {
+  .formContainer {
+    max-width: 69%;
+  }
+}
+
+@media (max-width: 540px) {
+  .formContainer {
+    max-width: 96%;
+    gap: 8px;
+  }
+}

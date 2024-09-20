@@ -1,0 +1,77 @@
+.profile {
+	display: none;
+	align-items: center;
+	gap: 32px;
+}
+
+.userLink {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 500;
+}
+
+.userLink::before {
+	content: attr(data-username);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border: 2px solid var(--link-active);
+	border-radius: 8px;
+	font-size: 24px;
+	line-height: 1.333;
+}
+
+.burger {
+	position: relative;
+	display: block;
+	height: 16px;
+	width: 25px;
+}
+
+.burger::before,
+.burger span,
+.burger::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 2px;
+	border-radius: 1px;
+	background-color: var(--link-active);
+	transition: background-color 0.5s ease-in-out;
+}
+
+.burger::before {
+	top: 0;
+}
+
+.burger span {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.burger::after {
+	bottom: 0;
+}
+
+@media (min-width: 744px) {
+	.burger {
+		height: 24px;
+		width: 35px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.profile {
+		display: flex;
+	}
+
+	.burger {
+		display: none;
+	}
+}

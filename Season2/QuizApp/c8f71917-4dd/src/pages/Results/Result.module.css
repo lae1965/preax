@@ -1,0 +1,53 @@
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -12px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  margin-block: 32px 16px;
+}
+
+.text {
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.green {
+  color: var(--right-answer-color);
+}
+
+.orange {
+  color: var(--wrong-answer-color);
+}
+
+.green,
+.orange {
+  font-weight: 700;
+}
+
+@media (max-width: 653px) {
+  .img {
+    margin-top: 0;
+    height: 162px;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 28px;
+    margin-block: 16px 8px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}

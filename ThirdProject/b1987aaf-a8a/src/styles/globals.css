@@ -1,0 +1,76 @@
+@import url('./normalize.css');
+@import url('./vars.css');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* outline: none; */
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	color: var(--text-primary);
+	transition: color 0.5s ease-in-out;
+	line-height: normal;
+}
+
+#root {
+	height: 100vh;
+	width: 100vw;
+	min-width: 375px;
+	overflow: auto;
+	background: linear-gradient(
+		45deg,
+		var(--color1) 0% 39.55%,
+		var(--color2) 39.55% 55%,
+		var(--color3) 55% 88.35%,
+		var(--color4) 88.35% 100%
+	);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+img {
+	max-height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	user-select: none;
+}
+
+button,
+input,
+textarea {
+	font-family: inherit;
+	transition: opacity 0.3s ease-in-out;
+}
+
+button:disabled,
+input:disabled,
+textarea:disabled {
+	pointer-events: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+svg {
+	display: block;
+}

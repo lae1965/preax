@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #145464 0% 39.55%,
+    #ef6c42 39.55% 55%,
+    #fc9b44 55% 88.35%,
+    #fccb4b 88.35% 100%
+  );
+}
+

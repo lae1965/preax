@@ -1,0 +1,62 @@
+.select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 60px;
+  outline: none;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 16px;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectAvatar {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  pointer-events: none;
+}
+
+.selectArrow {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  pointer-events: none;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+option[name='0'] {
+  background-image: url('/public/logo512.png');
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .select {
+    width: 70px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  .selectAvatar {
+    top: 10px;
+    left: 10px;
+  }
+
+  .selectArrow {
+    top: 14px;
+    right: 10px;
+  }
+}

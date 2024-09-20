@@ -1,0 +1,25 @@
+.footer {
+  height: 84px;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--day-text-color);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (max-width: 886px) {
+  .footer {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    height: auto;
+  }
+}

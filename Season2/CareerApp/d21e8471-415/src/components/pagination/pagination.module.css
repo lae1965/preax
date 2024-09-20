@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 0;
+}
+
+.btn,
+.item.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.429;
+}
+
+.item.dots {
+  pointer-events: none;
+}
+
+.btn {
+
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--primary-300);
+  transition: color .2s ease-in-out, background .2s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--neutral-100);
+  background: var(--primary-400);
+}
+
+.btn.active {
+  color: var(--neutral-100);
+  background: var(--primary-500);
+}

@@ -1,0 +1,6 @@
+export * from './Home/Home'
+export * from './Layout/Layout'
+export * from './NotFound/NotFound'
+export * from './Themes/Themes'
+export * from './Main/Main'
+export * from './Rating/Rating'

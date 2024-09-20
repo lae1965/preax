@@ -1,0 +1,101 @@
+.dropdown {
+  position: absolute;
+  width: 100%;
+  top: 64px;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  padding: 16px 0;
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 0 16px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--black-text);
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button:hover {
+  background-color: var(--background);
+}
+
+.button {
+  display: flex;
+  width: 100%;
+}
+
+.text {
+  margin-bottom: 12px;
+}
+
+.button,
+.text {
+  border-radius: var(--border-radius);
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--black-text);
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media all and (max-width: 1023px) {
+
+  .dropdown {
+    width: 100%;
+  }
+}
+
+
+@media all and (max-width: 767px) {
+
+  .dropdown {
+    padding: 12px 0;
+    top: 45px;
+  }
+
+  .head {
+    margin-bottom: 8px;
+    padding: 0 12px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .button,
+  .text {
+    font-size: 14px;
+    line-height: 114%;
+    padding: 8px 12px;
+  }
+}

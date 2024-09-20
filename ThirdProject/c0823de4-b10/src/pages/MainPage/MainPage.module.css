@@ -1,0 +1,9 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.ThemesPage__button {
+  width: 113px;
+}

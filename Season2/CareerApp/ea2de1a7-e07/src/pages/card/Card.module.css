@@ -1,0 +1,23 @@
+.wrapper {
+  padding-block: 32px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  transform: rotate(180deg);
+}
+
+.icon path {
+  fill: var(--primary-500);
+}

@@ -1,0 +1,5 @@
+.textarea {
+  resize: none;
+  grid-row: 2 / 4;
+  padding: 18px 28px 16px 16px;
+}

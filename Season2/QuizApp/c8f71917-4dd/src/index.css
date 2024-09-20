@@ -1,0 +1,23 @@
+:root {
+  --main-text-color: #125365;
+  --main-text-disabled-color: #81a1a9;
+  --main-bg-color: #f1f1ef;
+  --button-bg-collor: #ff9c46;
+  --button-disabled-bg-color: #edd0b6;
+  --right-answer-color: #2a8f55;
+  --wrong-answer-color: #df4c25;
+}
+
+* {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}

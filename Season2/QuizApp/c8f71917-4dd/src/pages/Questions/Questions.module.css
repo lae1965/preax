@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.question {
+  font-size: 28px;
+  line-height: 32px;
+  margin-block: 16px 32px;
+}
+
+.number {
+  position: absolute;
+  bottom: 108px;
+  right: 32px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 653px) {
+  .close {
+    top: 11px;
+  }
+
+  .close svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .img {
+    width: 72px;
+    height: 48px;
+  }
+
+  .question {
+    font-size: 18px;
+    line-height: 22px;
+    margin-block: 8px 16px;
+  }
+
+  .number {
+    bottom: 50px;
+    right: 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

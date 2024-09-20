@@ -1,0 +1,5 @@
+.btn {
+	padding: 4px;
+	color: var(--link-active);
+	transition: color 0.5s ease-in-out;
+}

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: var(--std-offset-xs);
+}
+
+.header > *:last-child {
+  flex-basis: var(--col-right-width);
+}
+
+@media (max-width: 991.98px) {
+  .header {
+    column-gap: 135px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    column-gap: var(--std-offset-xs);
+  }
+}

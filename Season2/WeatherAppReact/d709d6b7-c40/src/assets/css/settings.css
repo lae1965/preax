@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  line-height: normal;
+  color: var(--neutral-filled-100);
+  transition: color .2s ease-in-out;
+}
+
+img {
+  object-fit: cover;
+}
+
+img,
+svg {
+  display: block;
+}
+
+input:disabled,
+button:disabled {
+  opacity: .7;
+  pointer-events: none;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  color: var(--neutral-filled-400);
+  background: none;
+  cursor: pointer;
+  user-select: none;
+  transition: color .2s ease-in-out;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.descr {
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+}
+
+.section-title {
+  font-size: 24px;
+  line-height: 1.333;
+  font-weight: 700;
+}
+
+.card {
+  height: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--neutral-tone-100);
+}
+
+.app {
+  height: 100vh;
+  padding: 32px 80px;
+  background: url("/public/clouds.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.content {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: var(--bg-layer);
+  backdrop-filter: blur(25px);
+  overflow: hidden;
+  /* transition: background .3s ease-in-out, backdrop-filter .3s ease-in-out; */
+}
+
+.content.panelOpened {
+  background: none;
+  backdrop-filter: none;
+}
+
+@media (max-width: 1279px) {
+  .app {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .app {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .app {
+    padding: 16px;
+  }
+}

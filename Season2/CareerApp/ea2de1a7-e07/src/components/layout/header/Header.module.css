@@ -1,0 +1,131 @@
+.wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--neutral-100);
+  box-shadow: var(--shadow);
+  z-index: 50;
+}
+
+.wrapper[data-burger-open='true'] {
+  box-shadow: none;
+}
+
+.shadowBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  box-shadow: var(--shadow);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  z-index: 0;
+  pointer-events: none;
+  display: none;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  padding: 24px 40px;
+  max-width: 1200px;
+  align-items: center;
+  grid-template-columns: 35% 62% 3%;
+}
+
+.controls {
+  display: flex;
+  gap: 72px;
+}
+
+.navButton {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.icon {
+  display: none;
+  justify-self: end;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  grid-column: 3;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon[data-burger-open='true'] svg path {
+  fill: #000000;
+}
+
+@media (max-width: 1023px) {
+  .wrapper[data-burger-open='true'] {
+    position: static;
+    padding-top: 0;
+  }
+
+  .container[data-burger-open='true'] {
+    grid-template-rows: var(--header-height) calc(
+        100vh - (var(--header-height) + var(--footer-height))
+      );
+    padding: 0;
+    align-items: center;
+  }
+
+  .shadowBlock[data-burger-open='true'] {
+    display: block;
+  }
+
+  .controls[data-burger-open='true'] {
+    grid-row: 2;
+    grid-column: 1/4;
+    flex-direction: column;
+    gap: 32px;
+    background-color: var(--neutral-200);
+    height: 100%;
+    justify-content: center;
+  }
+
+  .controls[data-burger-open='false'] {
+    display: none;
+  }
+
+  .logoMargin {
+    margin-left: 40px;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .icon[data-burger-open='true'] {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 16px 16px 16px 20px;
+  }
+
+  .logo {
+    width: 118px;
+    height: 16px;
+  }
+
+  .logoMargin {
+    margin-left: 20px;
+  }
+
+  .icon[data-burger-open='true'] {
+    margin-right: 16px;
+  }
+}

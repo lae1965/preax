@@ -1,0 +1,171 @@
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(50, 47, 40, 0.7);
+  backdrop-filter: blur(5px);
+  animation: backdrop-filter-animation 0.5s cubic-bezier(0.01, 0.8, 0.13, 1.07);
+}
+
+.modalScrollContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 128px 40px;
+}
+
+.container {
+  position: relative;
+  flex: 1 0 0;
+  min-width: 1360px;
+  padding: 30px 40px 10px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  animation: appear 0.5s linear;
+}
+
+.header {
+  color: var(--text);
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date {
+  color: var(--hint-2);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.date::first-letter {
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 56px;
+}
+
+.content {
+  position: relative;
+}
+
+.image {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  max-height: 748px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.emoji {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 36px;
+  line-height: 48px;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.close:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border 0.2s;
+}
+
+.close:hover:after {
+  border-color: var(--text);
+}
+
+@keyframes backdrop-filter-animation {
+  from {
+    background: rgba(50, 47, 40, 0);
+    backdrop-filter: blur(0px);
+  }
+  to {
+    background: rgba(50, 47, 40, 0.7);
+    backdrop-filter: blur(5px);
+  }
+}
+
+@keyframes backdrop-filter-reverse {
+  from {
+    background-color: rgba(50, 47, 40, 0.7);
+    backdrop-filter: blur(5px);
+  }
+  to {
+    background-color: rgba(50, 47, 40, 0);
+    backdrop-filter: blur(0px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hidingBackground {
+  background-color: rgba(50, 47, 40, 0);
+  backdrop-filter: blur(0px);
+  animation: backdrop-filter-reverse 0.5s cubic-bezier(0.01, 0.8, 0.13, 1.07);
+}
+
+.hidingContainer {
+  opacity: 0;
+  animation: disappear 0.5s linear;
+}

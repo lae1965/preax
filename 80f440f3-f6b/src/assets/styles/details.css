@@ -1,0 +1,62 @@
+.details {
+  padding-left: 140px;
+  padding-right: 120px;
+}
+
+.details__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 19px;
+}
+
+.details__listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 18px;
+}
+
+.details__card {
+  width: 320px;
+  min-height: 162px;
+  padding: 20px 25px 12px;
+  border-radius: 10px;
+  background: var(--background-panel);
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.card__parametr {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.card__value {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.card__measurement {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.card__measurement-18 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card__wind {
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.card__wind-direction {
+  font-size: 18px;
+  font-weight: 300;
+}

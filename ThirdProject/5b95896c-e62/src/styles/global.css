@@ -1,0 +1,30 @@
+@import './normalize.css';
+@import './variables.css';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

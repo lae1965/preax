@@ -1,0 +1,27 @@
+.nav {
+  margin-top: 2px;
+}
+
+.navList {
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 1023px) {
+  .navList {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    margin-top: 1px;
+  }
+
+  .navList {
+    gap: 16px;
+  }
+}

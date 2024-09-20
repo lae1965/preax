@@ -1,0 +1,30 @@
+.block {
+  padding: 32px;
+  background: var(--neutral-100);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}
+
+.rightSide {
+  width: 352px;
+  position: sticky;
+  top: 104px;
+}
+
+.logo {
+  max-width: 288px;
+  margin-bottom: 16px;
+}
+
+.employerName {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.address {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}

@@ -1,0 +1,105 @@
+.noteItem {
+  position: relative;
+  border-radius: 10px;
+  height: 280px;
+  min-width: 325px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.background {
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transition-property: height, width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.background:hover {
+  height: 125%;
+  width: 125%;
+}
+
+.emoji {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.textBlock {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 83px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  padding: 11px 15px;
+  /* transition: height 0.3s ease-out; */
+  overflow: hidden;
+}
+
+/* .noteItem:hover .textBlock {
+  height: 70%;
+} */
+
+/* .noteItem:hover .content {
+  height: auto;
+  -webkit-line-clamp: unset;
+  display: block;
+} */
+
+.header {
+  display: flex;
+  height: 21px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-self: flex-start;
+}
+
+.date {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  color: #999;
+  align-self: flex-end;
+  padding-bottom: 1px;
+}
+
+.content {
+  font-size: 14px;
+  height: 32px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.15px;
+
+  /* transition: all 0.3s ease-out; */
+}

@@ -1,0 +1,246 @@
+.left-side {
+  position: relative;
+  flex-basis: 460px;
+  height: fit-content;
+  background-color: var(--background-panel);
+}
+
+.left-side__fon {
+  padding: 42px 41px 35px;
+  width: 100%;
+  height: 100%;
+  background: url(../img/Cloud-background_1.png);
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-color: var(--background-panel);
+  background-size: 100%;
+  background-blend-mode: difference;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.heading-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.search-city {
+  display: block;
+  padding: 15px 27px;
+  border-radius: 10px;
+  border: 2px solid var(--color-hint);
+  background: var(--background-panel);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+.theme-switch {
+  width: 64px;
+  height: 32px;
+  border: 2px solid var(--color-hint);
+  border-radius: 16px;
+  padding: 4px 6px;
+}
+
+.theme-switch__ellipce {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--color-main);
+  margin-left: 0;
+  transition: all 0.25s;
+}
+
+.theme-switch__dark {
+  background-color: #ec6e4d;
+  margin-left: 28px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.snow-flake {
+  width: 200px;
+  height: 200px;
+}
+
+.temperature {
+  font-size: 96px;
+  font-weight: 900;
+  margin-bottom: 17px;
+}
+
+.degrees {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.precipitation {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 17px;
+}
+
+.feelings {
+  color: var(--color-hint);
+}
+
+.date {
+  margin: 78px 0 35px;
+  display: flex;
+  gap: 88px;
+  color: var(--color-hint);
+}
+
+.date div {
+  width: 100px;
+  text-align: center;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--color-hint);
+}
+
+.city::before {
+  content: url(../img/location.png);
+  position: absolute;
+  left: -40px;
+}
+
+.left-side__drop {
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  padding: 46px;
+  background-color: var(--background-panel);
+  transition: left 0.5s;
+  z-index: 1;
+}
+
+.exit {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 46px;
+}
+
+.exit path {
+  fill: var(--color-main);
+}
+
+.get-city {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+.input-city {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  gap: 9px;
+  border-radius: 10px;
+  border: 2px solid var(--color-hint);
+  padding: 12px 17px;
+}
+
+.input-city input {
+  width: 185px;
+  border: none;
+  background-color: var(--background-panel);
+  color: var(--color-main);
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+}
+
+.input-city input::placeholder {
+  opacity: 30%;
+}
+
+.search-button {
+  position: relative;
+  width: 97px;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: 2px solid var(--color-hint);
+  color: var(--color-main);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--background-panel);
+}
+
+.not-found {
+  color: red;
+  position: absolute;
+  top: -42px;
+  display: flex;
+  align-items: flex-end;
+  height: 40px;
+  text-align: center;
+}
+
+.show {
+  left: 0;
+}
+
+.disable {
+  visibility: hidden;
+}
+
+.city-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-main);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.city-list__item {
+  padding: 26px 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: 70px;
+  border-radius: 10px;
+  word-break: break-all;
+}
+
+.city-list__item-fill {
+  fill: var(--background-panel);
+}
+
+.city-list__active-item {
+  background-color: var(--background-main);
+}
+
+.city-list__active-item svg path {
+  fill: var(--color-main);
+}
+
+.exit:hover,
+.search-button:hover,
+.search-city:hover,
+.theme-switch:hover,
+.city-list__item {
+  cursor: pointer;
+}

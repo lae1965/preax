@@ -1,0 +1,22 @@
+.imagesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+  grid-template-rows: repeat(auto-fit, 220px);
+  gap: 20px;
+}
+
+@media (max-width: 1439px) {
+  .imagesList {
+    grid-template-columns: repeat(auto-fill, minmax(412px, 1fr));
+    grid-template-rows: repeat(auto-fit, 271px);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 764px) {
+  .imagesList {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-rows: repeat(auto-fit, 190px);
+    gap: 20px;
+  }
+}

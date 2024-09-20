@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  padding: 50px;
+  min-width: 375px;
+  background: linear-gradient(
+    45deg,
+    #125365 0% 40%,
+    #ff713f 40% 55%,
+    #ff9c46 55% 88%,
+    #ffca4a 88% 100%
+  );
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

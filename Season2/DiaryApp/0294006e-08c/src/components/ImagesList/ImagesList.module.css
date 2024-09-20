@@ -1,0 +1,43 @@
+.images {
+  padding: 0 40px 40px;
+  max-height: calc(
+    100vh - 2 * var(--modal-padding) - var(--modal-header-height)
+  );
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-auto-rows: 210px;
+  gap: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image[data-choiced='true']::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
+
+.image[data-portrait='true'] {
+  grid-row: span 2;
+}
+
+.choiced path {
+  fill: #cacacb;
+}

@@ -1,0 +1,8 @@
+.content {
+  filter: blur(25px);
+  pointer-events: none;
+}
+
+.hidden {
+  overflow-y: hidden;
+}

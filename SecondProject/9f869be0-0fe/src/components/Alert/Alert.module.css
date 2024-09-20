@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 320px;
+  background-color: var(--bg-white);
+  box-shadow: var(--box-shadow);
+  font-family: var(--roboto);
+  color: var(--text-main);
+  font-size: 18px;
+  border-radius: 15px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.closeBtn {
+  display: flex;
+  margin-right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.message {
+  font: inherit;
+}
+
+.error {
+  background-color: #ffbebe;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-weight: 700;
+  outline: none;
+}
+
+:root {
+  --container-max-width: 1200px;
+  --container-min-width: 335px;
+
+  --neutral-border: #efefef;
+  --loader: #e1e1e1;
+  --neutral-100: #f9f9f9;
+  --neutral-200: #f6f6f6;
+  --neutral-400: #c5c5c5;
+  --neutral-600: #747474;
+  --neutral-800: #202020;
+  --primary-100: #ebf1fa;
+  --primary-200: #cfddf2;
+  --primary-400: #8caee0;
+  --primary-500: #5c89ce;
+
+  --border-radius: 16px;
+  --shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.03);
+  --hover-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.08);
+
+  --clamp-28-32: clamp(1.75rem, 1.605rem + 0.62vw, 2rem);
+  --clamp-24-48: clamp(1.5rem, 0.632rem + 3.7vw, 3rem);
+  --clamp-24-32: clamp(1.5rem, 1.022rem + 2.04vw, 2rem);
+  --clamp-20-40: clamp(1.25rem, 0.527rem + 3.09vw, 2.5rem);
+  --clamp-20-24: clamp(1.25rem, 1.105rem + 0.62vw, 1.5rem);
+
+  --clamp-16-32: clamp(1rem, 0.421rem + 2.47vw, 2rem);
+  --clamp-16-24: clamp(1rem, 0.711rem + 1.23vw, 1.5rem);
+  --clamp-16-20: clamp(1rem, 0.855rem + 0.62vw, 1.25rem);
+
+  --clamp-14-16: clamp(0.875rem, 0.803rem + 0.31vw, 1rem);
+  --clamp-12-16: clamp(0.75rem, 0.605rem + 0.62vw, 1rem);
+  --clamp-12-14: clamp(0.75rem, 0.678rem + 0.31vw, 0.875rem);
+
+  --clamp-8-16: clamp(0.5rem, 0.211rem + 1.23vw, 1rem);
+  --clamp-4-8: clamp(0.25rem, 0.105rem + 0.62vw, 0.5rem);
+
+  --main-indentation: 32px;
+  --main-padding: 40px;
+  --header-height: 72px;
+  --footer-height: 84px;
+}
+
+body {
+  min-height: 100dvh;
+  overflow-y: auto;
+  background-color: var(--neutral-200);
+  scrollbar-gutter: stable;
+}
+
+img,
+svg {
+  display: block;
+}
+
+img {
+  object-fit: cover;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--neutral-800);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--neutral-800);
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --main-indentation: 24px;
+    --footer-height: 68px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --main-indentation: 16px;
+    --main-padding: 20px;
+    --header-height: 56px;
+    --footer-height: 48px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  padding-top: 48px;
+}
+
+.list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.resetWrapper {
+  width: 100%;
+  text-align: end;
+}
+
+.reset {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.briefCase {
+  padding-inline: 24px;
+  gap: 4px;
+}

@@ -1,0 +1,59 @@
+.container {
+	max-width: 354px;
+}
+
+.section {
+	text-align: center;
+}
+
+.logo {
+	color: var(--logo-color);
+	margin-bottom: 32px;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.333;
+	color: var(--text-input);
+}
+
+.wrpbtn {
+	width: 100%;
+}
+
+.btn {
+	border: none;
+	outline: none;
+}
+
+@media (min-width: 744px) {
+	.container {
+		max-width: 603px;
+	}
+
+	.section {
+		padding: 80px 64px 60px;
+	}
+
+	.title {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 1.25;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 750px;
+	}
+
+	.section {
+		padding: 80px 80px 60px;
+	}
+
+	.title {
+		font-size: 42px;
+		line-height: 1.19;
+	}
+}

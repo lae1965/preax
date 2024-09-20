@@ -1,0 +1,20 @@
+.input {
+  display: flex;
+  flex: 1 0 0 0;
+  padding: 20px;
+  box-shadow: var(--boxShadow);
+  border-radius: 10px;
+  background: #FFF;
+  border: none;
+  font-family: var(--roboto);
+  font-size: 18px;
+  font-weight: 300;
+  margin-right: 20px;
+  max-width: 548px;
+  outline: none;
+  color: var(--hint);
+}
+
+.input::placeholder {
+  color: var(--hint);
+}

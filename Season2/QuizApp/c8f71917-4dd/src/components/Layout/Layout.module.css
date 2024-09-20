@@ -1,0 +1,23 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer {
+  color: var(--main-bg-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 653px) {
+  .layout {
+    gap: 8px;
+  }
+
+  .footer {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

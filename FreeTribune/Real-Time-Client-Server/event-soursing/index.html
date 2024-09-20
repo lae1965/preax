@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical trening</title>
+  <style>
+    body {
+      padding: 100px;
+    }
+
+    input,
+    button {
+      color: darkcyan;
+      border: 2px solid darkcyan;
+      background-color: #fff;
+      outline: none;
+    }
+
+    input {
+      padding: 15px;
+      width: 70%;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 15px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="form">
+    <input id="input" type="text" name="message" aria-label="message">
+    <button id="button" type="submit">Отправить</button>
+  </form>
+
+  <script>
+
+    const form = document.getElementById('form');
+
+    const subscribe = async () => {
+      const eventSource = new EventSource('http://localhost:5555/get-message');
+      eventSource.onmessage = (event) => {
+        const p = document.createElement('p');
+        p.innerText = JSON.parse(event.data);
+        form.after(p);
+      }
+    }
+    window.onload = subscribe;
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      response = fetch('http://localhost:5555/new-message', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(form.elements.message.value)
+      })
+      form.elements.message.value = '';
+    })
+  </script>
+
+</body>
+
+</html>

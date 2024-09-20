@@ -1,0 +1,80 @@
+@import './variables.css';
+@import './header.css';
+@import './day-info.css';
+@import './more-info.css';
+@import './slider.css';
+@import './footer.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  font-weight: 400;
+  font-variant-numeric: lining-nums;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  max-width: 100vw;
+  padding: 32px;
+  background-image: url(../public/background.jpg);
+  background-size: cover;
+  background-position-y: 25%;
+  background-attachment: fixed;
+}
+
+.content {
+  width: 1120px;
+  margin-inline: auto;
+  background: var(--content-background);
+  backdrop-filter: blur(50px);
+  border-radius: 8px;
+}
+
+.weather {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 506px;
+  gap: 16px;
+}
+
+@media (max-width: 1190px) {
+  .content {
+    width: auto;
+  }
+}
+
+@media (max-width: 886px) {
+  body {
+    padding: 24px;
+  }
+
+  .weather {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 16px;
+    min-width: 375px;
+  }
+
+  .weather {
+    padding: 16px;
+    gap: 32px;
+  }
+}

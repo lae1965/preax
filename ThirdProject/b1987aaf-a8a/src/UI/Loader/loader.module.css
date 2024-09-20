@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  height: 20px;
+}
+
+.container::before,
+.container::after,
+.dot {
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: bouncing 1s infinite ease-in-out 0s;
+}
+
+.dot {
+  animation-delay: 0.2s;
+}
+
+.container::after {
+  animation-delay: 0.4s;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    gap: 14px;
+  }
+
+  .container::before,
+  .container::after,
+  .dot {
+    height: 14px;
+    width: 14px;
+  }
+}

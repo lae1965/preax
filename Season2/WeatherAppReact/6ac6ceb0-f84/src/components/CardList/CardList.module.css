@@ -1,0 +1,29 @@
+.moreInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 158px);
+  grid-auto-rows: 196px;
+  gap: 16px;
+  color: var(--input-text-color);
+  justify-content: center;
+}
+
+@media (max-width: 886px) {
+  .moreInfo {
+    grid-template-columns: repeat(3, 163px);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .moreInfo {
+    grid-template-columns: repeat(3, minmax(0, 163px));
+  }
+}
+
+@media (max-width: 640px) {
+  .moreInfo {
+    gap: 8px;
+    grid-template-columns: repeat(3, minmax(0, 128px));
+    grid-auto-rows: 148px;
+  }
+}

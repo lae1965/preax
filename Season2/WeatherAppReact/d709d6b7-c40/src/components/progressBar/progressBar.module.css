@@ -1,0 +1,84 @@
+.progress {
+  height: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background: var(--neutral-tone-100);
+  mask: radial-gradient(
+      circle at var(--progress-value),
+      transparent 6px,
+      #ffffff 0px
+    ),
+    radial-gradient(
+      circle at var(--progress-value),
+      var(--neutral-filled-100) 4px,
+      transparent 0px
+    );
+  -webkit-mask: radial-gradient(
+      circle at var(--progress-value),
+      transparent 6px,
+      #ffffff 0px
+    ),
+    radial-gradient(
+      circle at var(--progress-value),
+      var(--neutral-filled-100) 4px,
+      transparent 0px
+    );
+  transition: mask 1s ease-in-out;
+}
+
+.progress.gradient {
+  background: var(--linear-gradient);
+}
+
+.progress div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateX(calc(-100% + var(--progress-value)));
+  transition: transform 0.5s ease-in-out;
+}
+
+.progress div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--neutral-filled-100);
+  transform: translateX(50%);
+}
+
+@media (max-width: 767px) {
+  .progress {
+    height: 6px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    mask: radial-gradient(
+        circle at var(--progress-value),
+        transparent 5px,
+        #ffffff 0px
+      ),
+      radial-gradient(
+        circle at var(--progress-value),
+        var(--neutral-filled-100) 3px,
+        transparent 0px
+      );
+    -webkit-mask: radial-gradient(
+        circle at var(--progress-value),
+        transparent 5px,
+        #ffffff 0px
+      ),
+      radial-gradient(
+        circle at var(--progress-value),
+        var(--neutral-filled-100) 3px,
+        transparent 0px
+      );
+  }
+
+  .progress div::after {
+    width: 6px;
+    height: 6px;
+  }
+}

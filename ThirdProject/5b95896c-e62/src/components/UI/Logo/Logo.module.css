@@ -1,0 +1,19 @@
+.wrapper {
+  cursor: pointer;
+}
+.wrapper svg {
+  height: 64px;
+}
+
+@media (max-width: 840px) {
+  .wrapper svg {
+    height: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper svg {
+    width: 81px;
+    height: 40px;
+  }
+}

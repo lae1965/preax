@@ -1,0 +1,155 @@
+.item {
+  position: relative;
+  width: 100%;
+}
+
+.menuButton,
+.button {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--background);
+  width: 100%;
+  border-radius: var(--border-radius);
+  gap: 16px;
+  transition: background 0.2s;
+}
+
+.menuButton:hover,
+.button:hover {
+  background-color: var(--hover-background);
+}
+
+.focused,
+.focused input,
+.focusedBorder {
+  background-color: var(--background-focus);
+}
+
+.focused .text {
+  color: var(--text);
+}
+
+.iconStyles {
+  width: 16px;
+  height: 16px;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--text-secondary);
+  margin-right: auto;
+  user-select: none;
+}
+
+.input {
+  outline: none;
+  border: none;
+  background-color: var(--background);
+  color: var(--text);
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.textBlack {
+  color: var(--text);
+}
+
+.bigDropdownWrapper,
+.dropdownWrapper {
+  display: grid;
+  max-height: 584px;
+  gap: 4px;
+  position: absolute;
+  z-index: 50;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--background);
+  border-radius: 0 0 12px 12px;
+  padding: 8px 0;
+  box-shadow: 0px 3px 15px 0px #00000008;
+}
+
+.bigDropdownWrapper {
+  padding: 0;
+  border-radius: 0;
+  gap: 0;
+  overflow-y: auto;
+  margin-right: -4px;
+  padding-right: 4px;
+}
+
+.bigDropdownWrapper::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+.bigDropdownWrapper::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.bigDropdownWrapper::-webkit-scrollbar-thumb {
+  background-color: #5c89ce;
+  border-radius: 2px;
+}
+
+.focusedBorder {
+  border-radius: 12px 12px 0 0;
+}
+
+.checkboxInput {
+  display: none;
+}
+
+.option {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+  text-align: left;
+  padding: 8px 24px;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.customCheckbox {
+  position: relative;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #c5c5c5;
+  border-radius: 4px;
+}
+
+.checked {
+  border: 2px solid #5c89ce;
+}
+
+.customCheckbox::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 4px;
+  height: 8px;
+  border: solid #5c89ce;
+  border-width: 0 2px 2px 0;
+  display: none;
+}
+
+.checkboxInput:checked + .customCheckbox::after {
+  display: block;
+}
+
+.transform {
+  transform: rotate(90deg);
+}

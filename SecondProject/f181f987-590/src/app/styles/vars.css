@@ -1,0 +1,7 @@
+:root {
+  --hint: #acacac;
+  --boxShadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  --roboto: 'Roboto', serif;
+  --IBM: 'IBM Plex Sans', serif;
+  --text: #1e2022;
+}

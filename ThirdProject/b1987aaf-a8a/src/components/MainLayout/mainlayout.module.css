@@ -1,0 +1,113 @@
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 20px 0;
+}
+
+.container {
+	flex: 1 1 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 8px;
+	overflow: hidden;
+}
+
+.wrapper {
+	position: relative;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: var(--bg-primary);
+	transition: background-color 0.5s ease-in-out;
+}
+
+.content {
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.content::-webkit-scrollbar {
+	width: 0px;
+}
+
+.main {
+	padding: 24px 16px;
+}
+
+.scrollbar {
+	position: absolute;
+	inset: 1.5px -18px 1.5px auto;
+	display: none;
+	width: 8px;
+	padding: 2px;
+	border-radius: 4px;
+	background-color: var(--bg-primary);
+	transition: background-color 0.5s ease-in-out;
+}
+
+.scrollbarWrapper {
+	position: relative;
+	height: 100%;
+}
+
+.track {
+	position: absolute;
+	inset: 0;
+	cursor: pointer;
+}
+
+.thumb {
+	content: '';
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	height: 74px;
+	border-radius: 2px;
+	background-color: var(--link-active);
+	transition: background-color 0.5s ease-in-out;
+}
+
+@media (min-width: 744px) {
+	.app {
+		padding: 70px 0;
+	}
+
+	.container {
+		padding: 25px;
+	}
+
+	.main {
+		padding: 24px 24px 40px;
+	}
+
+	.scrollbar {
+		display: block;
+	}
+}
+
+@media (min-width: 1280px) {
+	.app {
+		padding: 16px 0;
+	}
+
+	.container {
+		padding: 0 32px;
+	}
+
+	.main {
+		padding: 16px 56px 40px;
+	}
+
+	.scrollbar {
+		inset: 0 -28px 0 auto;
+		width: 12px;
+		border-radius: 6px;
+	}
+
+	.thumb {
+		border-radius: 4px;
+	}
+}

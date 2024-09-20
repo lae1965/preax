@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./public/weather-forecast.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <main class="content">
+    <header class="header">
+      <img src="./public/logo.svg" alt="logo" class="header__logo-big">
+      <img src="./public/logo-small.svg" alt="logo-small" class="header__logo-small">
+      <form class="header__search">
+        <input type="text" placeholder="Поиск по городу" class="header__input" aria-autocomplete="off">
+        <button type="button" class="header__send">
+          <img src="./public/search.svg" alt="search">
+        </button>
+        <button type="button" class="header__clear">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs />
+            <path id="Vector"
+              d="M0.650391 1.95142C0.291199 1.59229 0.291199 1.00977 0.650391 0.650635C1.00958 0.291504 1.59198 0.291504 1.95117 0.650635L15.3496 14.0486C15.7088 14.4077 15.7088 14.9902 15.3496 15.3494C14.9904 15.7085 14.408 15.7085 14.0488 15.3494L0.650391 1.95142Z"
+              fill="#545454" fill-opacity="1.000000" fill-rule="nonzero" />
+            <path id="Vector"
+              d="M15.3496 14.0486C15.7088 14.4077 15.7088 14.9902 15.3496 15.3494C14.9904 15.7085 14.408 15.7085 14.0488 15.3494L0.650391 1.95142C0.291199 1.59229 0.291199 1.00977 0.650391 0.650635C1.00958 0.291504 1.59198 0.291504 1.95117 0.650635L15.3496 14.0486Z"
+              stroke="#545454" stroke-opacity="1.000000" stroke-width="0.500000" />
+            <path id="Vector"
+              d="M0.650818 14.0488L14.0488 0.650391C14.408 0.29126 14.9904 0.29126 15.3495 0.650391C15.7087 1.00952 15.7088 1.59204 15.3495 1.95117L1.9516 15.3496C1.59241 15.7087 1.01007 15.7087 0.650818 15.3496C0.291626 14.9905 0.291626 14.408 0.650818 14.0488Z"
+              fill="#545454" fill-opacity="1.000000" fill-rule="nonzero" />
+            <path id="Vector"
+              d="M14.0488 0.650391C14.408 0.29126 14.9904 0.29126 15.3495 0.650391C15.7087 1.00952 15.7088 1.59204 15.3495 1.95117L1.9516 15.3496C1.59241 15.7087 1.01007 15.7087 0.650818 15.3496C0.291626 14.9905 0.291626 14.408 0.650818 14.0488L14.0488 0.650391Z"
+              stroke="#545454" stroke-opacity="1.000000" stroke-width="0.500000" />
+          </svg>
+        </button>
+      </form>
+    </header>
+    <section class="weather">
+      <div class="day-info">
+        <p class="day-info__location">Москва</p>
+        <p class="day-info__date">Суббота, 06 января</p>
+        <p class="day-info__time">11:29</p>
+        <p class="day-info__temperature">-7&deg</p>
+        <p class="day-info__status">
+          <img src="./public/broken-clouds.svg" alt="broken-clouds">
+          Облачно
+        </p>
+        <p class="day-info__filling">Ощущается как -11°</p>
+      </div>
+      <div class="more-info">
+        <!-- Вставляем блоки с помощью js -->
+      </div>
+    </section>
+    <section class="slider">
+      <nav class="slider__heading">
+        <p class="slider__forecast">Прогноз:</p>
+        <span tabindex="0" class="slider__day">на 24 часа</span>
+        <span tabindex="0" class="slider__week">на 5 дней</span>
+      </nav>
+      <div class="slider__content">
+        <button type="button" class="slider__arrow slider__arrow-left slider__arrow-disable"></button>
+        <div class="slider__slider">
+          <!-- Вставляем блоки с помощью js -->
+        </div>
+        <button type="button" class="slider__arrow slider__arrow-right"></button>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__text">Проект выполнен в рамках стажировки <a href="https://preax.ru">PREAX</a></p>
+    </footer>
+  </main>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

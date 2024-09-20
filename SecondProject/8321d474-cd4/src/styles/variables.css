@@ -1,0 +1,17 @@
+:root {
+  --bg-main: #fdfcf3;
+  --bg-white: #ffffff;
+
+  --text-main: #1e2022;
+  --text-hint: #acacac;
+  --text-hint2: #999;
+  --boxShadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  --roboto: 'Roboto', serif;
+  --IBM: 'IBM Plex Sans';
+  --doc-height: 100%;
+
+  --box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  --gradient: linear-gradient(137deg, #fff76a 0%, #ffce89 100%);
+}

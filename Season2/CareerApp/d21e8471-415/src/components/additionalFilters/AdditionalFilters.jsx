@@ -1,0 +1,40 @@
+import { useState } from 'react';
+import FilterItem from '@components/filterList/filterItem/FilterItem';
+import Checkbox from '@components/checkbox/Checkbox';
+import NestedLayout from '@components/nestedLayout/NestedLayout';
+
+const AdditionalFilters = ({ list }) => {
+  const [isOpenFilter, setIsOpenFilter] = useState(() =>
+    Object.fromEntries(list.map((_, index) => [index, false]))
+  );
+
+  const toggleFilter = (e, index) => {
+    e.stopPropagation();
+    setIsOpenFilter((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
+
+  return list.map((item, index) => (
+    <FilterItem
+      key={index}
+      iconName={item.icon}
+      text={item.title}
+      isOpenFilter={isOpenFilter[index]}
+      level='low'
+      onClick={(e) => {
+        toggleFilter(e, index);
+      }}
+    >
+      <NestedLayout>
+        {item.radio && <Checkbox list={item.radio} type='radio' id={item.id} />}
+        {item.checkbox && (
+          <Checkbox list={item.checkbox} type='checkbox' id={item.id} />
+        )}
+      </NestedLayout>
+    </FilterItem>
+  ));
+};
+
+export default AdditionalFilters;

@@ -1,0 +1,32 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 506px;
+  gap: var(--gap);
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: fit-content;
+  display: flex;
+}
+
+@media all and (max-width: 1023px) {
+  .header {
+    grid-template-columns: 54px 1fr;
+    gap: 135px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    grid-template-columns: 32px 1fr;
+    margin-bottom: 16px;
+  }
+}
+
+@media all and (max-width: 639px) {
+  .header {
+    gap: 16px;
+  }
+}

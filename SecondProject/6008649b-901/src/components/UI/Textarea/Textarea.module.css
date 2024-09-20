@@ -1,0 +1,26 @@
+.textarea {
+  height: 400px;
+  resize: none;
+  padding: 20px;
+  color: var(--text-main);
+  font-family: var(--roboto);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--bg-white);
+  transition: height 2s ease;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 764px) {
+  .textarea {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18.18px;
+    padding: 12px;
+  }
+}

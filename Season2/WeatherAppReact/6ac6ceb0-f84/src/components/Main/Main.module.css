@@ -1,0 +1,38 @@
+.content {
+  width: 1120px;
+  margin-inline: auto;
+  background: var(--content-background);
+  backdrop-filter: blur(25px);
+  border-radius: 8px;
+  min-height: 860px; /* Временно, пока отсутствует слайдер */
+  display: flex; /* Временно, чтобы прижать футер к низу */
+  flex-direction: column; /* Временно, чтобы прижать футер к низу */
+}
+
+.weather {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 506px;
+  gap: 16px;
+}
+
+@media (max-width: 1190px) {
+  .content {
+    width: auto;
+  }
+}
+
+@media (max-width: 886px) {
+  .weather {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .weather {
+    padding: 16px;
+    gap: 32px;
+  }
+}

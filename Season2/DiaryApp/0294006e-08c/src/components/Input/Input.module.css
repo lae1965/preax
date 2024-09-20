@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+  min-height: 60px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  outline: none;
+  box-shadow: var(--button-shadow);
+  padding: 9px 9px 9px 17px;
+}
+
+.button,
+.input {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.input:hover,
+.input:focus {
+  border: none;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.clear {
+  width: 16px;
+  height: 16px;
+}
+
+.clear path {
+  fill: #9fa0a1;
+}
+
+.wrapper:hover {
+  border: 1px solid #e0e0e0;
+}
+
+.wrapper:focus {
+  border: 1px solid #cacacb;
+}

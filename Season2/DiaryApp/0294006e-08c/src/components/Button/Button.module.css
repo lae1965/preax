@@ -1,0 +1,17 @@
+.button {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-color);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.button:hover {
+  background-color: #f5db54;
+}
+
+.button:active {
+  background-color: #ebd14a;
+}

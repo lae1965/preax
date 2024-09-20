@@ -1,0 +1,68 @@
+.button {
+  width: 304px;
+  padding: 20px 24px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--light-theme-bg-primary-button-default);
+  border-radius: var(--radius10);
+  cursor: pointer;
+  border: none;
+}
+
+.button:disabled {
+  background: var(--light-theme-bg-primary-button-disable);
+}
+
+.description {
+  color: var(--light-theme-text-secondary-default);
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.tooltip {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--light-theme-text-primary-default);
+}
+
+.shortcut {
+  font-weight: 700;
+  color: var(--light-theme-text-primary-default);
+}
+
+.disabledTooltip,
+.disabledShortcut {
+  color: var(--light-theme-text-secondary-default);
+}
+
+.disabledShortcut {
+  font-weight: 700;
+}
+
+@media (max-width: 840px) {
+  .button {
+    width: 264px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .description {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .button {
+    width: 295px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .description {
+    display: none;
+  }
+}

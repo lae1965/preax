@@ -1,0 +1,70 @@
+.search {
+  padding: 12px 12px 12px 16px;
+  border-radius: 8px;
+  background: var(--container-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19px;
+}
+
+.search:hover,
+.search:focus {
+  background: var(--hover-background);
+}
+
+.input {
+  width: 100%;
+  color: var(--input-text-color);
+  font-size: 20px;
+  line-height: 24px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.send {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.clear {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.search[data-filled='filled'] .header__send {
+  display: none;
+}
+
+.search[data-filled='filled'] .header__clear {
+  display: block;
+}
+
+.clear:hover #Vector {
+  fill: var(--input-text-color);
+}
+
+@media (max-width: 640px) {
+  .search {
+    padding: 8px 12px;
+  }
+
+  .input {
+    width: auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .send,
+  .clear {
+    height: 16px;
+    width: 16px;
+  }
+}

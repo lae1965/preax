@@ -1,0 +1,84 @@
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--button-shadow);
+  border-radius: 12px;
+  background-position: center;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  pointer-events: none;
+  transition: background-color 0.3s;
+}
+
+.image[data-default='true'] {
+  opacity: 0.4;
+}
+
+.image[data-default='true']:hover {
+  opacity: 0.6;
+}
+
+.image[data-default='false']:hover .clearImage {
+  display: flex;
+}
+
+.image[data-default='true']:active {
+  opacity: 0.8;
+}
+
+.image:hover .icon path {
+  fill: #747576;
+}
+
+.image:active .icon path {
+  fill: #494b4c;
+}
+
+.image[data-default='false']:hover::before {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.image[data-default='false']:active::before {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.clearImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  z-index: 100000;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  display: none;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.clearImage svg {
+  width: 16px;
+  height: 16px;
+}
+
+.clearImage svg path {
+  fill: #1e2022;
+}

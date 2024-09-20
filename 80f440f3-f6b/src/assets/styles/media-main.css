@@ -1,0 +1,18 @@
+@media (max-width: 1439px) {
+  .right-side {
+    flex-basis: 60.55%;
+    height: unset;
+    min-height: 1194px;
+  }
+}
+
+@media (max-width: 834px) {
+  #root {
+    flex-direction: column;
+  }
+
+  .right-side {
+    flex-basis: auto;
+    min-height: auto;
+  }
+}

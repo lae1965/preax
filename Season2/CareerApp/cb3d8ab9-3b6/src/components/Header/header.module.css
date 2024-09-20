@@ -1,0 +1,34 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  background: var(--background);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 130px;
+  height: 72px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav {
+  margin-right: 370px;
+}
+
+@media all and (max-width: 1024px) {
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .nav {
+    margin-right: 0;
+  }
+}

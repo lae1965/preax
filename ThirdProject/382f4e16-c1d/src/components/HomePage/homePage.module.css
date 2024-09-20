@@ -1,0 +1,9 @@
+.homePage {
+  display: flex;
+  justify-content: center;
+  background-image: url('../../img/mainBackground.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  height: 100vh;
+}

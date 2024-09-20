@@ -1,0 +1,121 @@
+.block {
+  padding: 32px;
+  background: var(--neutral-100);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}
+
+.leftSide {
+  width: 736px;
+}
+
+.name {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-block: 0 16px;
+}
+
+.salary {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.requirements {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.requirementsItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.experience {
+  text-transform: lowercase;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.buttonFrame {
+  padding: 16px 24px;
+  border: 2px solid var(--primary-500);
+  border-radius: var(--border-radius);
+}
+
+.descriptionHeading {
+  font-weight: 700;
+  margin-block: 0 24px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.description li {
+  list-style-type: '\2014';
+  margin-left: 21px;
+  padding-left: 4px;
+}
+
+.description p strong:only-child {
+  display: block;
+  margin-block: 24px;
+}
+
+.skills {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #cfddf2;
+  border-radius: var(--border-radius);
+}
+
+.published {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--neutral-600);
+}
+
+.eyeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.eyeIcon path {
+  fill: var(--primary-500);
+  stroke: var(--primary-500);
+}

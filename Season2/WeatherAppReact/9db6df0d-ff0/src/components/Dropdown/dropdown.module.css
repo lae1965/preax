@@ -1,0 +1,190 @@
+.dropdown {
+  margin-top: 16px;
+  position: relative;
+  padding-block: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 999;
+}
+
+.dropdown:hover,
+.dropdown:focus {
+  background-color: var(--background);
+}
+
+.header {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+.heading {
+  margin-left: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart:disabled {
+  cursor: default;
+}
+
+.cart:disabled svg path {
+  stroke: #8a8a8a;
+}
+
+.cart:hover:not(:disabled) svg path {
+  stroke: #202020;
+}
+
+.buttonWrapper:hover {
+  background-color: var(--background-hover);
+}
+
+.buttonWrapper {
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.itemButton {
+  padding: 12px 16px;
+  width: 100%;
+  text-align: left;
+}
+
+.text {
+  margin-inline: 16px;
+  color: var(--error-text);
+}
+
+.spinner {
+  color: var(--background);
+  display: inline-block;
+  position: relative;
+  width: 72px;
+  height: 72px;
+  margin-inline: auto;
+}
+
+.spinner div {
+  position: absolute;
+  top: 28px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.spinner div:nth-child(1) {
+  left: 0px;
+  animation: spinner1 0.6s infinite;
+}
+
+.spinner div:nth-child(2) {
+  left: 0px;
+  animation: spinner2 0.6s infinite;
+}
+
+.spinner div:nth-child(3) {
+  left: 28px;
+  animation: spinner2 0.6s infinite;
+}
+
+.spinner div:nth-child(4) {
+  left: 56px;
+  animation: spinner3 0.6s infinite;
+}
+
+@keyframes spinner1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spinner3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes spinner2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(28px, 0);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .dropdown {
+    margin-top: 12px;
+    padding-block: 12px;
+    gap: 8px;
+  }
+
+  .header {
+    gap: 12px;
+    margin-right: 12px;
+  }
+
+  .heading {
+    margin-left: 12px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .itemButton {
+    padding: 8px 12px;
+  }
+
+  .text {
+    margin-inline: 12px;
+  }
+
+  .cart svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+  }
+
+  .spinner div {
+    top: 16px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .spinner div:nth-child(3) {
+    left: 16px;
+  }
+
+  .spinner div:nth-child(4) {
+    left: 32px;
+  }
+
+  @keyframes spinner2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(16px, 0);
+    }
+  }
+}

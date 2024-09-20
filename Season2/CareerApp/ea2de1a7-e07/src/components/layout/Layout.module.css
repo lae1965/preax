@@ -1,0 +1,24 @@
+.bg {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+  padding: var(--header-height) 40px 0;
+}
+
+@media (max-width: 1023px) {
+  .wrapper[data-burger-open='true'] {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding-inline: 20px;
+  }
+}

@@ -1,0 +1,185 @@
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: var(--border-radius);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.333;
+  color: var(--neutral-600);
+  background: var(--neutral-100);
+  box-shadow: var(--box-shadow);
+  text-align: left;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.name {
+  flex-grow: 1;
+}
+
+.item {
+  width: 100%;
+  position: relative;
+}
+
+.btn.open,
+.btn:hover {
+  background-color: var(--primary-300);
+  transition: background-color 0.2s ease;
+}
+
+.btn.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: border-bottom-left-radius 0.5s ease, border-bottom-right-radius 0.5s ease;
+}
+
+.btn.recursion.open,
+.btn.recursion:hover {
+  background-color: var(--neutral-100);
+}
+
+.btn.open .text {
+  color: var(--neutral-800);
+  transition: color 0.2s ease;
+}
+
+.btn.open .icon path {
+  fill: var(--neutral-800);
+  transition: fill 0.2s ease;
+}
+
+.btn.open .icon {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.btn.recursion {
+  position: relative;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.btn.recursion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--neutral-100), var(--neutral-border), var(--neutral-100));
+}
+
+.icon {
+  transition: transform 0.2s ease;
+}
+
+.icon path {
+  transition: fill 0.2s ease;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--neutral-800-secondary);
+  margin-right: auto;
+  transition: color 0.2s ease;
+}
+
+.optionWrapper {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 47px;
+  width: 100%;
+  height: auto;
+  background-color: var(--neutral-100);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  max-height: 340px;
+  overflow-y: auto;
+  box-shadow: var(--box-shadow);
+
+}
+
+.optionWrapper::-webkit-scrollbar {
+  width: 4px;
+}
+
+.optionWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.optionWrapper::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  height: 20px;
+  background: #5c89ce;
+}
+
+.optionWrapper.recursion {
+  position: relative;
+  top: auto;
+  left: auto;
+  max-height: none;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+}
+
+.itemDrop {
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  position: relative;
+  background-color: var(--neutral-100);
+  width: 100%;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 24px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+}
+
+.itemDrop:first-child .label {
+  margin-top: 8px;
+}
+
+.itemDrop:last-child .label {
+  margin-bottom: 8px;
+}
+
+.itemDrop:not(:last-child) .label {
+  margin-bottom: 4px;
+}
+
+.checkbox,
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--neutral-100);
+  border-radius: 4px;
+}

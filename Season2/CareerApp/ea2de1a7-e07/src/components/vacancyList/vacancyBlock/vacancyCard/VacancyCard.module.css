@@ -1,0 +1,152 @@
+.card {
+  display: grid;
+  background-color: var(--neutral-100);
+  padding: 32px;
+  gap: 16px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+.card .salary {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 48px;
+}
+
+.headerBlock {
+  display: grid;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.title > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.controlsBlock {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: min-content;
+  height: min-content;
+  justify-self: end;
+}
+
+.eye {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.eye path {
+  fill: var(--neutral-400);
+}
+.eye path:not(:first-child) {
+  stroke: var(--neutral-400);
+}
+
+.blackListEye:hover path,
+.eye:hover path {
+  fill: var(--primary-400);
+}
+.blackListEye:hover path:not(:first-child),
+.eye:hover path:not(:first-child) {
+  stroke: var(--primary-400);
+}
+
+.card:hover .eye {
+  opacity: 1;
+}
+
+.upContent {
+  display: grid;
+  gap: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.upContent > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.additional {
+  display: grid;
+  gap: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.experience {
+  display: flex;
+  gap: 8px;
+}
+
+@media (min-width: 1024px) {
+  .title:hover,
+  .upContent:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main {
+    grid-template-columns: 1fr 40px;
+  }
+
+  .eye {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 16px;
+    gap: 12px;
+  }
+  .main {
+    grid-template-columns: 1fr 32px;
+  }
+
+  .card .salary {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .title {
+    gap: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .additional {
+    gap: 8px;
+  }
+
+  .upContent {
+    gap: 4px;
+  }
+}

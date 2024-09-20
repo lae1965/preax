@@ -1,0 +1,16 @@
+:root {
+  --light-theme-text-primary-default: #2d2d2d;
+  --light-theme-text-primary-disable: #c2c2c2;
+  --light-theme-bg-primary-default: #fcfcfc;
+  --light-theme-text-secondary-elements: #fcfcfc;
+  --both-theme-input-default: #05303d;
+  --light-theme-text-secondary-default: #909090;
+  --light-theme-bg-primary-button-default: #ff9c46;
+  --light-theme-bg-primary-button-disable: #edd0b6;
+
+  --both-theme-input-success: #2a8f55;
+  --both-theme-variant-incorrect: #df4c25;
+
+  --white-color: #fff;
+  --main-radius: 10px;
+}

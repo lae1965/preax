@@ -1,0 +1,80 @@
+.week-hour {
+  padding: 42px 54px 38px 74px;
+}
+
+.forecast {
+  margin-left: 64px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  display: flex;
+  gap: 24px;
+}
+
+.forecast div {
+  display: flex;
+  gap: 16px;
+}
+
+.forecast__week-hour {
+  color: var(--color-week-hour);
+  font-size: 20px;
+}
+
+.forecast__week-hour:hover {
+  cursor: pointer;
+}
+
+.forecast__active {
+  padding-bottom: 9px;
+  border-bottom: 3px solid var(--color-main);
+  color: var(--color-main);
+}
+
+.forecast-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 25px;
+}
+
+.forecast-list svg circle {
+  fill: var(--background-panel);
+}
+
+.card {
+  width: 100px;
+  height: 143px;
+  padding: 16px 0;
+  border-radius: 8.362px;
+  background: var(--background-panel);
+  box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__img-wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__temperature-night {
+  margin-left: 18px;
+  color: #d3d3d3;
+}
+
+.forecast-list__active {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}

@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+}
+
+.date {
+  padding: 16px 18px;
+  width: 260px;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  background-color: #fff;
+  pointer-events: none;
+}
+
+.wrapper:hover .icon path {
+  fill: #747576;
+}
+
+.date:focus + .icon path,
+.wrapper:active .icon path {
+  fill: #494b4c;
+}

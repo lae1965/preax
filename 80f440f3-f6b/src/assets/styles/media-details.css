@@ -1,0 +1,30 @@
+@media (max-width: 1439px) {
+  .details {
+    padding-left: 92px;
+    padding-right: 93px;
+  }
+
+  .details__listing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 834px) {
+  .details {
+    padding: 0 0 96px;
+  }
+
+  .details__heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .details__listing {
+    gap: 27px;
+  }
+
+  .details__card {
+    width: 314px;
+  }
+}

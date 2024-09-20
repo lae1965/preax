@@ -1,0 +1,17 @@
+.wrapper {
+  padding: 32px;
+  background-color: var(--main-bg-color);
+  width: 590px;
+  border-radius: 10px;
+}
+
+.button {
+  display: flex;
+}
+
+@media (max-width: 653px) {
+  .wrapper {
+    padding: 16px;
+    width: 343px;
+  }
+}

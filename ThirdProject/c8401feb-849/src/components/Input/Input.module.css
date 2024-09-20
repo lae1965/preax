@@ -1,0 +1,34 @@
+.inputGroup {
+	width: 424px;
+}
+
+.label {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	font-style: normal;
+	color: var(--light-theme-text-primary-default);
+}
+
+.input {
+	width: 100%;
+	margin-bottom: 8px;
+	padding: 16px;
+	font-size: 16px;
+	border-radius: 10px;
+	border: 2px solid var(--both-theme-input-default);
+}
+
+.input:focus {
+	outline: none;
+}
+
+.inputDescription {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	font-style: normal;
+	color: var(--light-theme-text-secondary-default);
+}

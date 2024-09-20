@@ -1,0 +1,19 @@
+.baseButton {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  background: none;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+  color: var(--primary-500);
+  transition: color 0.2s;
+}
+
+.disabled {
+  color: var(--neutral-400);
+}
+
+.disabled:hover {
+  color: var(--primary-400);
+}

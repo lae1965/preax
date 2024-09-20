@@ -1,0 +1,125 @@
+.detail {
+  width: 100%;
+}
+
+.list {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  padding: 16px;
+  min-height: max-content;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--black-text);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.data {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--black-text);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--black-secondary);
+  text-align: center;
+}
+
+.barWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.descriptionBarVal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1023px) {
+  .detail {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list {
+    width: 100%;
+    padding: 0 138px;
+    gap: 12px;
+  }
+}
+
+@media all and (max-width: 885px) {
+  .list {
+    padding: 0 80px;
+    gap: 12px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .list {
+    gap: 8px;
+    padding: 0 88px;
+  }
+
+  .item {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .data {
+    font-size: 22px;
+    line-height: 100%;
+  }
+
+  .description {
+    font-size: 10px;
+    line-height: 120%;
+  }
+}
+
+@media all and (max-width: 639px) {
+  .list {
+    width: 100%;
+    padding: 0;
+    gap: 8px;
+  }
+}

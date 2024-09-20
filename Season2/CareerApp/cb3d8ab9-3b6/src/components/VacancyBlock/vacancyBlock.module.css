@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  padding: 32px 0;
+  cursor: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  margin-bottom: 32px;
+}
+
+.title[data-sceleton='true'] {
+  color: transparent;
+  width: 256px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: var(--sceleton-baclground);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}

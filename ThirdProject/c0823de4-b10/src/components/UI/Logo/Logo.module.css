@@ -1,0 +1,9 @@
+.wrapper {
+  display: block;
+  cursor: pointer;
+}
+
+.wrapper svg {
+  height: inherit;
+  width: inherit;
+}

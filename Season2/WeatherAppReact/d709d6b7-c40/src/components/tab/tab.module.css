@@ -1,0 +1,70 @@
+.switchBtn {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  white-space: nowrap;
+
+  padding: 0;
+  border: none;
+  color: var(--neutral-filled-400);
+  background: none;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.switchBtn::before,
+.switchBtn::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  right: -1px;
+  left: -1px;
+  height: 2px;
+  border-radius: 1px;
+  background: currentColor;
+}
+
+.switchBtn::before {
+  opacity: 0;
+}
+
+.switchBtn:hover::before {
+  opacity: 0.5;
+}
+
+.switchBtn.active:hover::before,
+.switchBtn.active:focus::before {
+  opacity: 0;
+}
+
+.switchBtn::after {
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.switchBtn.active {
+  color: var(--neutral-filled-100);
+  pointer-events: none;
+}
+
+.switchBtn.active::after {
+  transform: none;
+}
+
+@media (max-width: 767px) {
+  .switchBtn {
+    font-size: 12px;
+    line-height: 1.333;
+  }
+
+  .switchBtn::before,
+  .switchBtn::after {
+    top: calc(100% + 1.5px);
+    right: -1px;
+    left: -0.5px;
+    height: 0.5px;
+    border-radius: 0.5px;
+  }
+}

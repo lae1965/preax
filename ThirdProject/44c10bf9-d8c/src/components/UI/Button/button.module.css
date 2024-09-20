@@ -1,0 +1,28 @@
+.button {
+	width: 304px;
+	padding: 20px 24px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	color: var(--white);
+	background-color: var(--light-theme-bg-primary-button-default);
+	border-radius: var(--radius10);
+	cursor: pointer;
+	border: none;
+}
+
+.button:disabled {
+	background: var(--light-theme-bg-primary-button-disable);
+}
+
+.description {
+	color: var(--light-theme-text-secondary-default);
+	font-size: 10px;
+	font-weight: 400;
+	margin-top: 8px;
+	text-align: center;
+}
+
+.enter {
+	font-weight: 700;
+}

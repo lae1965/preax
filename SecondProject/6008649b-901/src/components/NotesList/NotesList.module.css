@@ -1,0 +1,19 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  gap: 20px;
+  padding: 0 40px 40px 40px;
+}
+
+@media (max-width: 1439px) {
+  .main {
+    grid-template-columns: repeat(auto-fill, minmax(412px, 1fr));
+  }
+}
+
+@media (max-width: 764px) {
+  .main {
+    padding: 0 20px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  }
+}

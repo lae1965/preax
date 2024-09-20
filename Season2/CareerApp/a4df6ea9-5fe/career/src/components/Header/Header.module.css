@@ -1,0 +1,38 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+}
+
+.header {
+  display: flex;
+  gap: 130px;
+  padding: 26px 40px;
+  margin-inline: auto;
+  width: var(--content-width);
+}
+
+.menu {
+  display: flex;
+  gap: 72px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--button-color);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button:not(.active):hover {
+  color: var(--hover-button-color);
+}
+
+.active {
+  color: var(--active-color);
+}

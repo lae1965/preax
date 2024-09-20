@@ -1,0 +1,57 @@
+.wrapper {
+  width: 270px;
+}
+
+.button {
+  padding: 24px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-bg-collor);
+  color: var(--main-bg-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.button[data-loading='loading'],
+.button:disabled {
+  background-color: var(--button-disabled-bg-color);
+  cursor: not-allowed;
+}
+
+.hotKey {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.hotKey span {
+  font-weight: 700;
+}
+
+.button:disabled ~ .hotKey,
+.button:disabled ~ .hotKey span {
+  color: var(--main-text-disabled-color);
+}
+
+@media (max-width: 768px) {
+  .hotKey {
+    display: none;
+  }
+}
+
+@media (max-width: 653px) {
+  .wrapper {
+    width: 194px;
+  }
+
+  .button {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

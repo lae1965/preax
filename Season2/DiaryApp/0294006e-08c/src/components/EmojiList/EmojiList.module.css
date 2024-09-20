@@ -1,0 +1,37 @@
+.emojiList {
+  position: absolute;
+  top: 72px;
+  right: 0;
+  width: 304px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #cacacb;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.clearButton {
+  padding: 8px 0px;
+  gap: 8px;
+  width: 129px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  box-shadow: none;
+  margin-top: 10px;
+  color: #747576;
+  background: transparent;
+}
+
+.clearButton:hover {
+  background: transparent;
+  color: #494b4c;
+}

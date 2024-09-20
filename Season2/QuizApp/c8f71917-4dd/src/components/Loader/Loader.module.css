@@ -1,0 +1,48 @@
+:root {
+  --shadow-gap: 30px;
+}
+
+.loader {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: block;
+  margin: 5px auto;
+  position: relative;
+  background: var(--main-bg-color);
+  box-shadow: calc(var(--shadow-gap) * -1) 0 var(--main-bg-color),
+    var(--shadow-gap) 0 var(--main-bg-color);
+  animation: shadowPulse 1s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: var(--main-bg-color);
+    box-shadow: calc(var(--shadow-gap) * -1) -2px var(--button-disabled-bg-color),
+      var(--shadow-gap) -2px var(--main-bg-color);
+    transform: translateY(1px);
+  }
+  66% {
+    background: var(--button-disabled-bg-color);
+    box-shadow: calc(var(--shadow-gap) * -1) 0 var(--main-bg-color),
+      var(--shadow-gap) 0 var(--main-bg-color);
+    transform: translateY(0);
+  }
+  100% {
+    background: var(--main-bg-color);
+    box-shadow: calc(var(--shadow-gap) * -1) 2px var(--main-bg-color),
+      var(--shadow-gap) 2px var(--button-disabled-bg-color);
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 653px) {
+  :root {
+    --shadow-gap: 22px;
+  }
+
+  .loader {
+    width: 10px;
+    height: 10px;
+  }
+}

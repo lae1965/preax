@@ -1,0 +1,23 @@
+@media (max-width: 744px) {
+  .circleSize {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .size {
+    width: 20px;
+    height: 20px;
+  }
+
+  .circleSize {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logoSize {
+    width: inherit;
+    height: inherit;
+  }
+}

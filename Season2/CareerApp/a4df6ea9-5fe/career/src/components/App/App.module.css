@@ -1,0 +1,5 @@
+.wrapper {
+  width: var(--content-width);
+  margin-inline: auto;
+  margin-top: 80px;
+}

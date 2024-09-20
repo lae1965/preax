@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  padding: 12px 52px 12px 16px;
+}
+
+.icon {
+  position: absolute;
+  cursor: pointer;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media all and (max-width: 767px) {
+  .input {
+    padding: 8px 34px 8px 12px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    right: 14px;
+  }
+}

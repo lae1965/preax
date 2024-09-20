@@ -1,0 +1,30 @@
+.navActive {
+  font-weight: 700;
+  color: var(--light-theme-bg-primary-button-default);
+  border-bottom: 3px solid var(--light-theme-bg-primary-button-default);
+  padding-bottom: 6px;
+}
+
+.navNotActive {
+  font-weight: 500;
+  color: var(--light-theme-text-secondary-default);
+  border-bottom: 3px solid var(--light-theme-bg-primary-default);
+  padding-bottom: 6px;
+}
+
+@media (max-width: 744px) {
+  .navActive {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 375px) {
+  .navActive {
+    font-weight: 700;
+    padding-bottom: 4px;
+  }
+
+  .navNotActive {
+    padding-bottom: 4px;
+  }
+}

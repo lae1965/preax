@@ -1,0 +1,31 @@
+.filter {
+  display: grid;
+  gap: 16px;
+  padding-top: 48px;
+}
+
+.list {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+.clearButton {
+  font-family: var(--font-main);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  transition: color 0.2s ease;
+  color: var(--primary);
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.clearButton:hover {
+  color: var(--hover);
+  transition: color 0.2s ease;
+}

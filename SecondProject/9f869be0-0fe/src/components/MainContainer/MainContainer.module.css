@@ -1,0 +1,16 @@
+.mainContainer {
+  overflow-y: auto;
+  height: 100%;
+}
+
+@media (max-width: 1439px) {
+  .mainContainer {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 764px) {
+  .mainContainer {
+    padding: 20px;
+  }
+}

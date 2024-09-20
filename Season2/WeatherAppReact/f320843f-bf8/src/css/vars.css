@@ -1,0 +1,52 @@
+:root {
+  --min-app-container: 1280px;
+  --std-container: 1120px;
+  --std-border-radius: 8px;
+  --std-offset-xl: 64px;
+  --std-offset-lg: 48px;
+  --std-offset-md: 32px;
+  --std-offset-sm: 24px;
+  --std-offset-xs: 16px;
+  --std-offset-xs-m: 12px;
+  --std-offset-xs-s: 8px;
+  --std-offset: 6px;
+  --std-offset-s: 4px;
+  --std-offset-app: var(--std-offset-md);
+  --std-offset-container: var(--std-offset-md);
+  --std-offset-inner: var(--std-offset-xl);
+  --std-font-family: 'Raleway';
+  --clr-neutral-1: #202020;
+  --clr-neutral-2: #707070;
+  --clr-neutral-tone: #f5f4f440;
+  --clr-light: #f5f4f4;
+  --clr-neutral-3: #dadada;
+  --clr-neutral-3-tone: #dadada66;
+  --clr-neutral-4: #a6a6a6;
+  --clr-neutral-5: #545454;
+  --clr-background: rgba(245, 244, 244, 0.4);
+  --gradient-bg: radial-gradient(
+    50% 400% at 50% 50%,
+    rgba(84, 84, 84, 0.4) 0%,
+    rgba(138, 138, 138, 0.4) 45.12%,
+    rgb(218, 218, 218) 100%,
+    rgba(218, 218, 218, 0.4) 100%
+  );
+  --col-right-width: 506px;
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --std-offset-app: var(--std-offset-sm);
+    --std-offset-container: var(--std-offset-sm);
+    --std-offset-inner: var(--std-offset-lg);
+    --col-right-width: 100%;
+  }
+}
+
+@media (max-width: 699.98px) {
+  :root {
+    --std-offset-app: var(--std-offset-xs);
+    --std-offset-container: var(--std-offset-xs);
+    --std-offset-inner: var(--std-offset-md);
+  }
+}

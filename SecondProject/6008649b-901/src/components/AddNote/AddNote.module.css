@@ -1,0 +1,180 @@
+.addNote {
+  overflow: auto;
+  height: -webkit-fill-available;
+  width: 100vw;
+  padding: 40px;
+  background-color: var(--bg-main);
+  position: absolute;
+  left: 0;
+  z-index: 111;
+}
+
+.content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.areaButton {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.eventInfo {
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 60px 60px auto;
+  gap: 40px;
+}
+
+.dateInput {
+  width: 272px;
+}
+
+.dateEmoji {
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 40px;
+}
+
+.searchPictures {
+  display: grid;
+  grid-template-rows: 60px auto;
+  gap: 40px;
+}
+
+.searchQuery {
+  display: grid;
+  grid-template-columns: auto 60px;
+  gap: 20px;
+}
+
+.searchIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--gradient);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageChoice {
+  width: 220px;
+  height: 160px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1439px) {
+  .unActive {
+    display: none;
+  }
+
+  .addNote {
+    padding: 40px 80px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .bgGray {
+    background: rgb(104, 101, 95);
+    backdrop-filter: blur(5px);
+  }
+
+  .imageChoice {
+    display: flex;
+  }
+
+  .eventInfo {
+    grid-template-columns: auto 220px;
+    grid-template-rows: 60px 60px auto;
+  }
+
+  .dateInput {
+    width: 272px;
+  }
+
+  .dateEmoji {
+    grid-row: 2;
+  }
+
+  .areaButton {
+    grid-row: 3;
+    grid-column: span 2/3;
+  }
+}
+
+@media (max-width: 764px) {
+  .addNote {
+    padding: 20px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .searchIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .searchQuery {
+    grid-template-columns: auto 40px;
+  }
+
+  .searchPictures {
+    grid-template-rows: 40px auto;
+    gap: 20px;
+  }
+
+  .eventInfo {
+    grid-template-columns: unset;
+    grid-template-rows: 200px 40px 40px auto;
+    gap: 20px;
+  }
+
+  .imageChoice {
+    grid-row: 1;
+    width: auto;
+    height: 200px;
+  }
+
+  .nameInput {
+    grid-row: 2;
+  }
+
+  .dateEmoji {
+    grid-row: 3;
+  }
+
+  .areaButton {
+    grid-column: span 1/1;
+    grid-row: 4;
+    gap: 20px;
+  }
+
+  .dateEmoji {
+    grid-template-columns: auto 70px;
+    gap: 20px;
+  }
+
+  .dateInput {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+  }
+
+  .emoji {
+    grid-column: 2;
+  }
+}

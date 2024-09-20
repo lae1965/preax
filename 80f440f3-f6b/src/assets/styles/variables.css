@@ -1,0 +1,16 @@
+:root {
+  --color-main: #48484a;
+  --color-hint: #acacac;
+  --color-week-hour: var(--color-hint);
+  --background-main: #f1f1f1;
+  --background-panel: #ffffff;
+  --background-range: #d3d3d3;
+}
+
+.dark-theme {
+  --color-main: #e6e6e6;
+  --color-week-hour: #6d6d6d;
+  --background-main: #100e1c;
+  --background-panel: #212331;
+  --background-range: var(--color-main);
+}

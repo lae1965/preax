@@ -1,0 +1,78 @@
+span {
+  color: inherit;
+}
+
+.answer {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 12px;
+  border: 4px solid var(--main-text-color);
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.answer[data-status='choiced'],
+.answer:not([data-status='unhovered']):not([data-status='wrong']):not(
+    [data-status='right']
+  ):hover {
+  background-color: var(--button-bg-collor);
+  color: var(--main-bg-color);
+  border-color: var(--button-bg-collor);
+}
+
+.answer[data-status='unhovered'] {
+  cursor: auto;
+}
+
+.answer:disabled {
+  background-color: inherit;
+  color: inherit;
+  border-color: inherit;
+  cursor: auto;
+}
+
+.answer[data-status='wrong'] {
+  background-color: var(--wrong-answer-color);
+  color: var(--main-bg-color);
+  border-color: var(--wrong-answer-color);
+  cursor: auto;
+}
+
+.answer[data-status='right'] {
+  background-color: var(--right-answer-color);
+  color: var(--main-bg-color);
+  border-color: var(--right-answer-color);
+  cursor: auto;
+}
+
+.answer span:first-of-type {
+  font-weight: 700;
+}
+
+.answer span:last-of-type {
+  flex: 1;
+}
+
+.answer svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 653px) {
+  .answer {
+    font-size: 14px;
+    line-height: 18px;
+    border-width: 2px;
+    gap: 8px;
+  }
+
+  .answer svg {
+    width: 16px;
+    height: 16px;
+  }
+}
